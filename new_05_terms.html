@@ -1,0 +1,292 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8"/>
+    <!--
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"/>
+    -->
+    <title>new_05_terms</title>
+    <link rel="stylesheet" type="text/css" href="static/css/screen.css"/>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script type="text/javascript" src="http://bonapick.com/static/js/jquery.cookie.js"></script>
+    <script type="text/javascript" src="http://bonapick.com/static/js/ZeroClipboard.min.js"></script>
+    <script type="text/javascript" src="http://bonapick.com/static/js/bonapick.js"></script>
+    <script type="text/javascript">
+        function add_to_pick (pick_item){
+            if (pick_item){
+                $('#add_to_pick_field').val(pick_item);
+                $('form[name=add_to_pick_form]').submit();
+            }
+        }
+    </script>
+    
+        <script type="text/javascript">
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    
+            ga('create', 'UA-43177341-1', 'bonapick.com');
+            
+                var dimensionValue = 0;
+            
+            ga('set', 'dimension1', dimensionValue);
+            ga('send', 'pageview');
+        </script>
+        
+    
+    
+</head>
+
+<body>
+
+    
+    <div id="fb-root"></div>
+    <header>
+        <div class="content_wrapper">
+            <a href="/" class="logo"><img src="http://bonapick.com/static/images/logo.png" alt="Bonapick.com" height="38" width="192"/></a>
+            <a href="/" class="logo small"><img src="http://bonapick.com/static/images/logo_small.png" alt="Bonapick.com" height="30" width="30"/></a>
+            
+
+    
+        
+        <a href="http://api.bonapick.com/twauth?state=I48U2S3L62HE29UEBT6L" class="twitter_button_small social_btn"><span><b class="twitter_icon"></b>Sign In</span></a>
+        <a href="https://www.facebook.com/dialog/oauth?state=I48U2S3L62HE29UEBT6L&client_id=476715612423530&redirect_uri=http%3A%2F%2Fapi.bonapick.com%2Ffbauth&scope=email%2Cuser_birthday" class="fb_button_small social_btn"><span><b class="fb_icon"></b>Sign In</span></a>
+        <a href="/addrequest/" class="green_btn_small green_btn_smallontop"><span>Create Your Poll</span></a>
+        <form id="login_form" name="login_form" action="/login/" method="POST">
+            <input type='hidden' name='csrfmiddlewaretoken' value='RJRDABC7WvcZgDJIeyeCrxJwEg8kxcmQ' />
+            <input type="hidden" name="is_home" value="is_home"/>
+            <ul id="native_login">
+                <!--
+                <li><input type="email" name="username" placeholder="email"/></li>
+                <li><input type="password" name="password" placeholder="password"/></li>
+                -->
+                <li class="right">
+                    <a href="/signup/" class="signup_btn">Sign Up</a>
+                    <a href="/login" class="login_btn">Sign In</a>
+                </li>
+            </ul>
+            <ul id="menu">
+                <li>
+                    <a href="#" class="black_btn"><span><b class="menu_icon"></b>Menu</span></a>
+                    <div class="login_menu">
+                        <div class="social_buttons">
+                            <a href="https://www.facebook.com/dialog/oauth?state=I48U2S3L62HE29UEBT6L&client_id=476715612423530&redirect_uri=http%3A%2F%2Fapi.bonapick.com%2Ffbauth&scope=email%2Cuser_birthday" class="fb_button"><span><b class="fb_icon_big"></b>Sign in with Facebook</span></a>
+                            <a href="http://api.bonapick.com/twauth?state=I48U2S3L62HE29UEBT6L" class="twitter_button"><span><b class="twitter_icon_big"></b>Sign in with Twitter</span></a>
+                            <div>Or You Can Just Sign In</div><br/>
+                        </div>
+                        <input type="email" name="username" value="" placeholder="email"/>
+                        <input type="password" name="password" value="" placeholder="password"/>
+                        <a href="#" class="button_blue" onclick="$('#login_form').submit(); return false;"><span>Sign in</span></a>
+                        <div>New Here?</div><br/>
+                        <a href="/signup/" class="button_blue"><span>Sign Up</span></a>
+                    </div>
+                </li>
+            </ul>
+            <input type="submit" class="hidden_submit"/>
+        </form>
+    
+
+        </div>
+    </header>
+    
+    <section class="flatpage-section">
+        <div class="content account">
+            <nav>
+                <div class="content_wrapper">
+                    
+                    <ul id="nav_menu">
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/about/" class="">About</a></li>
+                        <li><a href="/privacy/" class="">Privacy</a></li>
+                        <li><a href="/terms/" class="active">Terms</a></li>
+                        <li style="display:none"><a href="/press/" class="">Press</a></li>
+                        <li><a href="/contact_us/" class="">Contact Us</a></li>
+                        
+                    </ul>
+                    <div class="clear"></div>
+                </div>
+            </nav>
+            <div class="content_wrapper">
+                <div class="flatpage">
+                    <h2>Terms of Service</h2>
+
+<p>Last modified on August 30, 2013.</p>
+
+<p>By using Bonapick at http(s)://bonapick.com and http(s)://www.bonapick.com (the "Service"), a service of Bonapick Inc., you accept the following terms and conditions (the "Terms of Service"). Please also be aware of the Privacy Policy located on Bonapick. Usage of the service is also governed by the privacy policy. In case of inconsistency between the TOS and the privacy policy, these terms of service shall prevail.</p>
+
+<h3>User Registration Obligations</h3>
+
+<p>You agree that any and all information provided during the registration process ("Registration Data") is true, accurate, up to date and complete. You also agree to update and maintain Registration Data so that it is true, accurate, up-to-date and complete. Bonapick reserves the right to suspend or terminate your account, in whole or in part, or prohibit your further use of the Service, at any time. By posting your links to Bonapick Votings on other platforms such as Facebook, Twitter, Google+ etc you agree to abide by the terms and policies set by these platforms for these kinds of content.</p>
+
+<h3>Member Account, Password, and Security</h3>
+
+<p>Upon completing the registration process you will receive a password and account ID. You and you alone are solely responsible for maintaining the confidentiality of your password and information associated with your account that you desire to remain confidential. You also agree that you are responsible for any and all activities that may take place, or occur under your password and account. You further agree to notify Bonapick in the event your password or account has been used without the proper authorization or there are other breaches of security of which you become aware. You also agree to exit from your account at the end of each session with the Service. Bonapick will not be responsible or liable for any loss or damage incurred, or later arising from your failure to comply with this section. Bonapick prohibits the sale or transfer of control of any Bonapick account by the registered account holder to any other individual or party.</p>
+
+<h3>Bonapick Votings</h3>
+
+<p>By creating Bonapick Voting you authorize other users of Bonapick to view your voting and cast their votes on them. You should not create a Bonapick Voting with no intent to buy any item in it. You authorize Bonapick to choose appropriate audience for your Bonapick Voting. You can distribute the link of your Bonapick Voting yourself, but you are not permitted to engage in any negotiated votings. You can not share any information about the item you are going to buy before the voting ended. In the creation process all of the numbers are approximate and Service does not guaranty that the Voting will get chosen amount of votes in the chosen amount of time.</p>
+
+<p>Bonapick reserves a right to close accounts of those users, who create Bonapick Votings and then don't buy any item from them by following a link from Bonapick.</p>
+
+<h3>Bonapick Rewards and Earnings</h3>
+
+<p>You agree to provide Bonapick with information to enable remittance of your earnings on the site. This information may include:
+
+<ul>
+<li>Tax ID information of the user</li>
+<li>Legal name of the user</li>
+<li>Address of the user</li>
+</ul>
+</p>
+<p>
+Winning votes appear in your wallet in 24 hours after Bonapick receives information about purchase of a winning merchandise. If the merchandise later results in a chargeback the corresponding winning vote will be removed.
+</p>
+<p>
+Rewards will appear in your wallet in 24 hours after they are claimed, but they will not be available to redeem until you get at least $10 value. You will not be rewarded for merchandise that later results in a chargeback to the merchant.  
+</p>
+<p>
+Accounts generating a large amount of chargebacks may be suspended immediately without notice.
+All available earnings on Bonapick must be redeemed within 365 days by providing above information on the website, or they will be forfeited.</p>
+
+
+<h3>Copyright</h3>
+
+<p>We claim no ownership of any intellectual property rights over the Content that you upload to the Service. Any intellectual property rights in the uploaded Content belong solely to you (or your licensors). However, by uploading the Content to the Service, you grant Bonapick a non-exclusive, royalty-free, worldwide, perpetual and irrevocable right to use, reproduce, modify, distribute, sublicense, and prepare derivative works of, such Content, in any format or medium now known or later developed, solely on and through the Service, subject to these Terms of Service and our privacy policy. You represent and warrant that you have sufficient rights to grant this license. You can remove your profile at any time by deleting your account which will remove all personally identifiable information. We will review all claims of copyright infringement received and remove the Content deemed to have been posted or distributed in violation of any such laws. To make a claim, please provide us with the following:
+<ul>
+<li>A description of the copyrighted work that you claim has been infringed;</li>
+<li>Information sufficient to enable Bonapick to locate the allegedly infringing Content on the Service;</li>
+<li>Your address, phone number and email address;</li>
+<li>Statement by you that you have good faith belief that the use of the Content is not authorized;</li>
+<li>Statement by you that the information in your notification is accurate and that you are the copyright owner or authorized to act on the copyright owner's behalf;</li>
+<li>A signature of the person authorized to act on behalf of the owner of the copyright interest.</li>
+</ul>
+Claims can be sent to contact (at) bonapick.com.</p>
+
+<p>Bonapick owns anonymized votings results and all of the derived data and products.</p>
+
+<h3>Indemnity</h3>
+
+<p>You agree to indemnify and hold harmless Bonapick, its affiliates, officers, agents, partners, and employees from any claim, action, demand, loss or damages (including attorneys' fees) made or incurred by any third party arising out of or relating to the Content you Upload, your use of the Service, your violation of these Terms of Service, or your violation of any rights of a third party.</p>
+
+<h3>Limitation of Liability</h3>
+
+<p>The Service and the Software are made available to you for your convenience on an "as is" and "as available" basis. Bonapick DOES NOT WARRANT OR MAKE ANY REPRESENTATIONS OR WARRANTIES (INCLUDING BUT NOT LIMITED TO MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, SATISFACTORY QUALITY, RELIABILITY OR NON-INFRINGEMENT) REGARDING THE USE OR THE RESULTS OF THE USE OR THE CONTENTS OF THE SERVICE OR THE SOFTWARE. Bonapick does not warrant or represent that the Software will be free of all viruses. You understand that the Service and the Software are still alpha/beta versions and may not perform with complete functionality, may be undergoing testing, may be inconsistently available, may have software "bugs" and may have other issues affecting availability and functionality. In addition to all other disclaimers and limitations of liability contained in these Terms of Use, you specifically agree that Bonapick is not liable for any of the above issues. Moreover, you understand that Bonapick does not warrant or represent that the Service and/or the Software will work on all mobile phones, will be compatible with all mobile phone networks and/or will be available in all geographical areas.</p>
+<p>Bonapick SHALL NOT BE LIABLE FOR ANY LOSS OR DAMAGE, WHETHER DIRECT, INDIRECT, SPECIAL OR CONSEQUENTIAL, ARISING OUT OF THE USE OF OR THE INABILITY TO USE THE SERVICE OR THE SOFTWARE, OR THE RESULTS OR THE CONTENTS THEREOF, TO THE GREATEST EXTENT PERMITTED BY LAW.
+If you are dissatisfied with the Service or the Software, or have any other disputes or claims with or against Bonapick with respect to the Service or the Software or these Terms of Use, then your sole and exclusive remedy is to discontinue using the Service and/or the Software.</p>
+
+<h3>Prohibited Use</h3>
+
+<p>You shall not, and shall not authorize or encourage any third party to:
+<ul>
+<li>directly or indirectly generate Bonapick Votings, items from which you have no intention to buy;</li>
+<li>directly or indirectly generate Bonapick Votes for any of the Bonapick Votings;</li>
+<li>directly or indirectly generate queries, impressions of or clicks on any Bonapick Voting through any automated, deceptive, fraudulent or other invalid means, including but not limited to manual voting from different users, the use of robots or other automated query and clicking tools and/or computer generated search requests, and/or the unauthorized use of other search engine optimization services and/or software;</li>
+<li>edit, modify, filter, truncate or change the order of the information contained in any Bonapick Voting;</li>
+<li>frame, minimize, remove or otherwise inhibit the full and complete display of any Web page accessed by an end user after clicking on any part of an Bonapick Voting;</li>
+<li>create or display Bonapick Voting(s) for/on any Web page or any Web site that contains any hate-related, violent, pornographic, adult or illegal content;</li>
+<li>"crawl", "spider", index or in any non-transitory manner store or cache information obtained from any Bonapick Voting;</li>
+<li>disseminate malware;</li>
+<li>create a new account to use the Service after Bonapick has terminated this Agreement with You as a result of your breach of this Agreement;</li>
+<li>engage in any action or practice that reflects poorly on Bonapick or otherwise disparages or devalues Bonapick's reputation or goodwill.</li>
+<li>any attempt to artificially generate voting actions on Bonapick Votings using automated software.</li>
+<li>willfully post or create content disparaging a particular user or product;</li>
+<li>willfully violate the terms and conditions of any of the platforms we work with now and in the future including Twitter, Facebook, Pinterest, Tumblr and YouTube;</li>
+<li>attempt to disintermediate content publishers or advertisers from the Bonapick Service;</li>
+<li>act in any way that violates any Service Policies posted on the Bonapick Web Site, as may be revised from time to time, or any other agreement between You and Bonapick;</li>
+</ul>
+</p>
+
+<h3>FTC Endorsement Guidelines</h3>
+
+<p>You acknowledge that you have read and will abide by the following guidelines - FTC Guides Concerning the Use of Endorsements and Testimonials in Advertising.</p>
+
+<p>You acknowledge that any attempted participation or violation of any of the foregoing is a material breach of this Agreement and that we may pursue any and all applicable legal and equitable remedies against You, including an immediate suspension or termination of Your account or termination of this Agreement, and the pursuit of all available civil or criminal remedies. You also acknowledge that Once an account is suspended or terminated, all pending earnings on that account will be forfeited.</p>
+
+<h3>Notices From Bonapick</h3>
+
+<p>From time to time, Bonapick may send notices to you via email or regular mail, or display notices or links to notices on the Service. We encourage you to read these notices and check for them on a regular basis, because these notices will apply to you and your account immediately upon posting, whether or not you actually review them.</p>
+
+<p>We are continuously developing the features and functionality of Bonapick. Consequently, we reserve the right to modify these terms of service at any time at our sole discretion. You agree to be bound to such alterations when you use Bonapick and the alterations shall be effective at the time of posting on Bonapick. It is important that you review these Terms of Service regularly on Bonapick to ensure you are updated on any modifications to these terms.</p>
+
+<p>If you are dissatisfied with or do not agree to abide by any altered Terms of Service, your sole remedy should be to close your account on Bonapick and discontinue use of our service. If you close your account Bonapick Links associated with your name will be marked as Anonymous and be disassociated with your account. All user statistics when you request account removal will be reset on removal of your account.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <form name="add_to_pick_form" action="/addrequest/" method="POST">
+        <input type='hidden' name='csrfmiddlewaretoken' value='RJRDABC7WvcZgDJIeyeCrxJwEg8kxcmQ' />
+        <input type="hidden" name="add_to_pick" value="add_to_pick"/>
+        <input type="hidden" name="add_to_pick_field" id="add_to_pick_field" value=""/>
+    </form>
+    <footer>
+        <div class="footer_wrapper">
+            <div class="right">
+                <a href="/" class="logo_wrapper"><img src="http://bonapick.com/static/images/logo.png" alt="Bonapick" class="logo"/></a>
+                <div class="clear"></div>
+                <ol class="social_profile_links">
+                    <li><a href="https://www.facebook.com/mybonapick" target="_blank" class="facebook_btn"></a></li>
+                    <li><a href="https://twitter.com/mybonapick" target="_blank" class="twitter_btn"></a></li>
+                    <li><a href="https://plus.google.com/u/0/b/115169845367138658157/115169845367138658157/posts" target="_blank" class="google_plus_btn"></a></li>
+                    
+                    <li><a href="http://pinterest.com/bonapick/pins/ " target="_blank" class="pinterest_btn"></a></li>
+                </ol>
+            </div>
+            <a href="#" class="right up_link"><span class="up_arrow"></span>up</a>
+            <ul class="footer_menu">
+                <li><a href="/">Home</a></li>
+                <li><a href="/about/">About</a></li>
+                <li><a href="/privacy/">Privacy</a></li>
+                <li><a href="/terms/">Terms</a></li>
+                <li style="display:none"><a href="/press/">Press</a></li>
+                <li><a href="/contact_us/">Contact Us</a></li>
+            </ul>
+        </div>
+        <div class="legal">&copy; Bonapick Inc. All Rights Reserved 2013 &reg;</div>
+    </footer>
+    <div id="popup" class="popup">
+        <div class="popup_wrapper">
+            <a href="#" class="close_popup"><b class="close_big"></b></a>
+            <div id="popup_content">
+                <div class="column1">
+                    <img src="http://ecx.images-amazon.com/images/I/41gu9n%2BrE9L.jpg" alt="Some cool item..."/>
+                </div>
+                <div class="column2">
+                    <h2>Casio Men's MRT1200-091 Sport Analog Dive Watch</h2>
+                    <div class="vote_info" data-json='{"percentage":"38","start_angle":"0"}'>
+                        <div class="pie"></div><span>38%</span>
+                        <p class="right">of people think this one is better than the rest</p>
+                    </div>
+                    <a href="#" class="green_btn_small"><span>Add to Bonapick</span></a>
+                    <span class="full_version">to start new Bonapick with it</span>
+                    <div class="separator">or</div>
+                    <a href="#" target="_blank" class="amazon_btn"><span>buy at Amazon</span></a>
+                    
+                    <span class="full_version">for <span class="red">$169.99</span> and FREE SHIPPING</span>
+                </div>
+                <div class="clear"></div>
+            </div>
+        </div>
+    </div>
+    <div id="backgroundPopup"></div>
+
+
+<div id="page-message" class="page-message">
+    <div class="page-message-wrapper ">
+        <div class="page-message-content">
+            
+            <div class="page-message-icon green">
+                <div class="page-message-icon-wrapper green">
+                    <b class="checkmark_small"></b>
+                </div>
+            </div>
+            
+            <div id="page-message-text" class="page-message-text"></div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

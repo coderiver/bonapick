@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"/>
+    <title>Bonapick - Home</title>
+    <link rel="stylesheet" href="css/style.css"/>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/responsiveslides.min.js"></script>
+    <script type="text/javascript" src="js/bonapick.js"></script>
+</head>
+<body>
+    <div id="width519" class="hint">519px or less</div>
+    <div id="width759" class="hint">759px or less</div>
+    <div id="width959" class="hint">959px or less</div>
+    <div id="width960" class="hint">960px or more</div>
+    <header>
+        <div class="content_wrapper">
+            <a href="#" class="logo"><img src="images/logo.png" alt="Bonapick.com" height="39" width="177"/></a>
+            <a href="#" class="logo small"><img src="images/logo_small.png" alt="Bonapick.com" height="39" width="38"/></a>
+            <a href="#" class="twitter_button_small social_btn"><span><b class="twitter_icon"></b>Signin</span></a>
+            <a href="#" class="fb_button_small social_btn"><span><b class="fb_icon"></b>Signin</span></a>
+            <form name="login_form" action="" method="POST">
+                <ul id="native_login">
+                    <li><input type="text" name="email" value="email"/></li>
+                    <li><input type="password" name="password" value="********"/></li>
+                    <li>
+                        <a href="#" class="login_btn">Signin</a>
+                        <a href="#" class="signup_btn">Signup</a>
+                    </li>
+                </ul>
+                <ul id="menu">
+                    <li>
+                        <a href="#" class="black_btn"><span><b class="menu_icon"></b>Menu</span></a>
+                        <div class="login_menu">
+                            <div class="social_buttons">
+                                <a href="#" class="fb_button"><span><b class="fb_icon_big"></b>Signin with Facebook</span></a>
+                                <a href="#" class="twitter_button"><span><b class="twitter_icon_big"></b>Signin with Twitter</span></a>
+                                <div>Or you can just signin</div><br/>
+                            </div>
+                            <input type="text" name="email2" value="email"/>
+                            <input type="password" name="password2" value="email"/>
+                            <a href="#" class="button_blue"><span>Signin</span></a>
+                            <div>New here?</div><br/>
+                            <a href="#" class="button_blue"><span>Signup</span></a>
+                        </div>
+                    </li>
+                </ul>
+            </form>
+        </div>
+    </header>
+    <div class="content home">
+        <div class="carousel_wrapper">
+            <div class="overlay">
+                <div class="content_wrapper">
+                    <h1><b>We help you</b><br/>to buy the best</h1>
+                    <div class="search_form">
+                        <form name="search_form" action="" method="POST">
+                            <h2>Start with searching what you want to buy:</h2>
+                            <input type="text" name="keyword"/>
+                            <a href="#" class="button_green"><span>Search</span></a>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel">
+                <ul id="carousel_slides">
+                    <li><img src="images/slide1.jpg" alt="Slide 1"/></li>
+                    <li><img src="images/slide2.jpg" alt="Slide 2"/></li>
+                    <li><img src="images/slide3.jpg" alt="Slide 3"/></li>
+                </ul>
+            </div>
+        </div>
+        <nav>
+            <div class="content_wrapper">
+                <a href="#" class="up_link"><span class="up_arrow"></span>up</a>
+                <p>Social media crap...</p>
+                <ul id="menu">
+                    <li><a href="#popular_feed" class="latest active">Latest popular votings</a></li>
+                    <li><a href="#howto" class="howto">How it works?</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="content_wrapper">
+            <section>
+                <a name="popular_feed" class="nav_anchor"></a>
+                <h1 class="section_title mobile">Popular votes:</h1>
+                <ul class="popular_feed">
+                    <li class="voting_set">
+                        <div class="wrapper">
+                            <div class="column1 left">
+                                <div class="image_big" style="background-image:url(http://ecx.images-amazon.com/images/I/41gu9n%2BrE9L.jpg);">
+                                    <span class="winner_percentage">55%</span>
+                                    <div class="reuse">
+                                        <a href="#" class="green_btn_small"><span>Add to pick</span></a>
+                                        <p>- or -</p>
+                                        <a href="#" class="amazon_btn"><span>Buy at Amazon</span></a>
+                                    </div>
+                                    <div class="description">
+                                        <p>Balh blah blah. Lorem ipsum dolor sit amet ipsum dolor sit amet ipsum dolor...</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="column2 left">
+                                <span></span>
+                                <ol>
+                                    <li>
+                                        <a href="#" class="image_small" style="background-image:url(http://ecx.images-amazon.com/images/I/51oEd5ucJgL.jpg);">
+                                            <span class="percentage">15%</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="image_small" style="background-image:url(http://ecx.images-amazon.com/images/I/814SO0X4mIL._SL1500_.jpg);">
+                                            <span class="percentage">15%</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="image_small" style="background-image:url(http://ecx.images-amazon.com/images/I/814SO0X4mIL._SL1500_.jpg);">
+                                            <span class="percentage">15%</span>
+                                        </a>
+                                    </li>
+                                </ol>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="voting_set">
+                        <div class="wrapper">
+                            <div class="column1 left">
+                                <div class="image_big" style="background-image:url(http://ecx.images-amazon.com/images/I/510Shi1i8kL._SY395_.jpg);">
+                                    <span class="winner_percentage">55%</span>
+                                    <div class="reuse">
+                                        <a href="#" class="green_btn_small"><span>Add to pick</span></a>
+                                        <p>- or -</p>
+                                        <a href="#" class="amazon_btn"><span>Buy at Amazon</span></a>
+                                    </div>
+                                    <div class="description">
+                                        <p>Balh blah blah. Lorem ipsum dolor sit amet ipsum dolor sit amet ipsum dolor...</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="column2 left">
+                                <span></span>
+                                <ol>
+                                    <li>
+                                        <a href="#" class="image_small" style="background-image:url(http://ecx.images-amazon.com/images/I/51w6i2uQ7OL._SS100_.jpg);">
+                                            <span class="percentage">15%</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="image_small" style="background-image:url(http://ecx.images-amazon.com/images/I/51CsZjUT8AL._SL500_SS100_.jpg);">
+                                            <span class="percentage">15%</span>
+                                        </a>
+                                    </li>
+                                </ol>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="voting_set">
+                        <div class="wrapper">
+                            <div class="column1 left">
+                                <div class="image_big" style="background-image:url(http://ecx.images-amazon.com/images/I/41oeGKYgN2L._SY395_.jpg);">
+                                    <span class="winner_percentage">55%</span>
+                                    <div class="reuse">
+                                        <a href="#" class="green_btn_small"><span>Add to pick</span></a>
+                                        <p>- or -</p>
+                                        <a href="#" class="amazon_btn"><span>Buy at Amazon</span></a>
+                                    </div>
+                                    <div class="description">
+                                        <p>Balh blah blah. Lorem ipsum dolor sit amet ipsum dolor sit amet ipsum dolor...</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="column2 left">
+                                <span></span>
+                                <ol>
+                                    <li>
+                                        <a href="#" class="image_small" style="background-image:url(http://ecx.images-amazon.com/images/I/41KA8%2BA2X0L._SS100_.jpg);">
+                                            <span class="percentage">15%</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="image_small" style="background-image:url(http://ecx.images-amazon.com/images/I/41Upgm6rOzL._SS100_.jpg);">
+                                            <span class="percentage">15%</span>
+                                        </a>
+                                    </li>
+                                </ol>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="clear"></li>
+                </ul>
+                <div class="afterfeed">
+                    <a href="#" class="button_green"><span>Create my bonapick</span></a><b>or</b><h2><a href="#">See more bonapicks</a></h2>
+                </div>
+            </section>
+            <section>
+                <h1 class="section_title mobile">Howto:</h1>
+                <div class="howto">
+                    <a name="howto" class="nav_anchor"></a>
+                    <p>Bonapick is very fun and easy, but revolutionary way to choose only the right things and make only the best purchases online. Here you can ask crowd which item is better, help people to make a choice and earn real money if your vote is helpful.</p>
+                    <div class="divider"></div>
+                    <ul>
+                        <li>
+                            <b>1</b>
+                            <h3>Add your voting and crowd will tell you what's better to buy</h3>
+                            <div style="background-image:url(images/howto1.jpg);" class="image"></div>
+                            <p>Sometimes it is very difficult to pick what's better to buy. But it is not problem any more, and we are here to help you to make best choice. Just create voting and crowd will advice you which item is better to buy. It is very easy and effectively. Try it right now!</p>
+                            <a href="#" class="button_green"><span>Create my bonapick</span></a>
+                            <div class="clear"></div>
+                        </li>
+                        <li>
+                            <b>2</b>
+                            <h3>Share your opinion and help people to make bonapick</h3>
+                            <div style="background-image:url(images/howto2.jpg);" class="image"></div>
+                            <p>You can help people to pick and buy right item. Just share your opinion and vote for the best pick. We can send you email notifications with new votings, so you will stay tuned and be able to help people once they need.</p>
+                            <div class="clear"></div>
+                        </li>
+                        <li>
+                            <b>3</b>
+                            <h3>Earn money if people buy what you advice</h3>
+                            <div style="background-image:url(images/howto3.jpg);" class="image"></div>
+                            <p>Text how to earn and spend money on AMAZON.</p>
+                            <div class="clear"></div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </div>
+    </div>
+    <footer>
+        <div class="footer_wrapper">
+            <a href="#" class="up_link"><span class="up_arrow"></span>up</a>
+        </div>
+        <div class="legal">&copy; Bonapick Inc. All right reserved 2013.</div>
+    </footer>
+</body>
+</html>

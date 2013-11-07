@@ -1,0 +1,234 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8"/>
+    <!--
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"/>
+    -->
+    <title>new_04_privacy</title>
+    <link rel="stylesheet" type="text/css" href="static/css/screen.css"/>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script type="text/javascript" src="http://bonapick.com/static/js/jquery.cookie.js"></script>
+    <script type="text/javascript" src="http://bonapick.com/static/js/ZeroClipboard.min.js"></script>
+    <script type="text/javascript" src="http://bonapick.com/static/js/bonapick.js"></script>
+    <script type="text/javascript">
+        function add_to_pick (pick_item){
+            if (pick_item){
+                $('#add_to_pick_field').val(pick_item);
+                $('form[name=add_to_pick_form]').submit();
+            }
+        }
+    </script>
+    
+        <script type="text/javascript">
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    
+            ga('create', 'UA-43177341-1', 'bonapick.com');
+            
+                var dimensionValue = 0;
+            
+            ga('set', 'dimension1', dimensionValue);
+            ga('send', 'pageview');
+        </script>
+        
+    
+    
+</head>
+
+<body>
+
+    
+    <div id="fb-root"></div>
+    <header>
+        <div class="content_wrapper">
+            <a href="/" class="logo"><img src="http://bonapick.com/static/images/logo.png" alt="Bonapick.com" height="38" width="192"/></a>
+            <a href="/" class="logo small"><img src="http://bonapick.com/static/images/logo_small.png" alt="Bonapick.com" height="30" width="30"/></a>
+            
+
+    
+        
+        <a href="http://api.bonapick.com/twauth?state=IQPVH3RC8OMCX5EE3V0N" class="twitter_button_small social_btn"><span><b class="twitter_icon"></b>Sign In</span></a>
+        <a href="https://www.facebook.com/dialog/oauth?state=IQPVH3RC8OMCX5EE3V0N&client_id=476715612423530&redirect_uri=http%3A%2F%2Fapi.bonapick.com%2Ffbauth&scope=email%2Cuser_birthday" class="fb_button_small social_btn"><span><b class="fb_icon"></b>Sign In</span></a>
+        <a href="/addrequest/" class="green_btn_small green_btn_smallontop"><span>Create Your Poll</span></a>
+        <form id="login_form" name="login_form" action="/login/" method="POST">
+            <input type='hidden' name='csrfmiddlewaretoken' value='RJRDABC7WvcZgDJIeyeCrxJwEg8kxcmQ' />
+            <input type="hidden" name="is_home" value="is_home"/>
+            <ul id="native_login">
+                <!--
+                <li><input type="email" name="username" placeholder="email"/></li>
+                <li><input type="password" name="password" placeholder="password"/></li>
+                -->
+                <li class="right">
+                    <a href="/signup/" class="signup_btn">Sign Up</a>
+                    <a href="/login" class="login_btn">Sign In</a>
+                </li>
+            </ul>
+            <ul id="menu">
+                <li>
+                    <a href="#" class="black_btn"><span><b class="menu_icon"></b>Menu</span></a>
+                    <div class="login_menu">
+                        <div class="social_buttons">
+                            <a href="https://www.facebook.com/dialog/oauth?state=IQPVH3RC8OMCX5EE3V0N&client_id=476715612423530&redirect_uri=http%3A%2F%2Fapi.bonapick.com%2Ffbauth&scope=email%2Cuser_birthday" class="fb_button"><span><b class="fb_icon_big"></b>Sign in with Facebook</span></a>
+                            <a href="http://api.bonapick.com/twauth?state=IQPVH3RC8OMCX5EE3V0N" class="twitter_button"><span><b class="twitter_icon_big"></b>Sign in with Twitter</span></a>
+                            <div>Or You Can Just Sign In</div><br/>
+                        </div>
+                        <input type="email" name="username" value="" placeholder="email"/>
+                        <input type="password" name="password" value="" placeholder="password"/>
+                        <a href="#" class="button_blue" onclick="$('#login_form').submit(); return false;"><span>Sign in</span></a>
+                        <div>New Here?</div><br/>
+                        <a href="/signup/" class="button_blue"><span>Sign Up</span></a>
+                    </div>
+                </li>
+            </ul>
+            <input type="submit" class="hidden_submit"/>
+        </form>
+    
+
+        </div>
+    </header>
+    
+    <section class="flatpage-section">
+        <div class="content account">
+            <nav>
+                <div class="content_wrapper">
+                    
+                    <ul id="nav_menu">
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/about/" class="">About</a></li>
+                        <li><a href="/privacy/" class="active">Privacy</a></li>
+                        <li><a href="/terms/" class="">Terms</a></li>
+                        <li style="display:none"><a href="/press/" class="">Press</a></li>
+                        <li><a href="/contact_us/" class="">Contact Us</a></li>
+                        
+                    </ul>
+                    <div class="clear"></div>
+                </div>
+            </nav>
+            <div class="content_wrapper">
+                <div class="flatpage">
+                    <h2>Privacy Policy</h2>
+
+<p>Bonapick takes your privacy seriously. Please read the following to learn more about our privacy policy. The federal government and technology industry have developed practical tips to help you guard against Internet fraud, secure your computer and protect your personal information.</p>
+
+<h3>Personal Information Collection & Use</h3>
+
+<p>Bonapick collects personal information when you register with Bonapick, when you visit Bonapick pages and when you cast you vote at Bonapick Votings. Bonapick may combine information about you that we have with information we obtain from business partners or other companies. When you register we ask for information such as your name and email address. When you register with Bonapick and sign in to our services, you are not anonymous to us. Bonapick automatically receives and records information from your computer and browser, including your IP address, Bonapick cookie information, software and hardware attributes, and the page you request. Bonapick uses information for the following general purposes: to customize the content you see, fulfill your requests for products and services, improve our services, contact you, and conduct research. You may set up a profile on Bonapick.</p>
+
+<h3>Information Sharing</h3>
+
+<p>Bonapick does not rent, sell, or share personal information about you with other people or non-affiliated companies except to provide products or services you've requested, when we have your permission, or when we respond to subpoenas, court orders, or legal process, or to establish or exercise our legal rights or defend against legal claims. If Bonapick becomes involved in a merger, acquisition, or any form of sale of some or all of its assets, we will provide notice before personal information is transferred and becomes subject to a different privacy policy.</p>
+
+<h3>Cookies</h3>
+
+<p>Bonapick may set and access Bonapick cookies on your computer. Bonapick uses these cookies in connection with Bonapick products and services.</p>
+
+<h3>Non-Personally Identifying Information</h3>
+
+<p>This is information that is commonly made available by web browsers and servers, such as the browser type, language preference, referring site, and the date and time of each visitor request. Bonapick uses this information to understand how visitors use our website.</p>
+
+<h3>User Generated Content</h3>
+
+<p>The contents of any item that you post directly to the Site, including any text, images, photos, videos and audio, are stored and maintained on our servers in order to publish these items and provide the Service. Your submitted content will be associated with your account.</p>
+
+<h3>Confidentiality & Security</h3>
+
+<p>We limit access to personal information about you to employees who we believe reasonably need to come into contact with that information to provide products or services to you or in order to do their jobs. These individuals are bound by confidentiality obligations and may be subject to discipline, including termination and criminal prosecution, if they fail to meet these obligations.</p>
+
+<h3>Third Party Sites</h3>
+
+<p>This Policy only applies to the Bonapick website and services. We do not exercise control over the sites that our service links to. These other sites may place their own cookies or other files on your computer, collect data or solicit personal information from you. We encourage you to read such privacy policies of any third-party sites you visit. It is the sole responsibility of such third parties to adhere to any applicable restrictions on the disclosure of your personally-identifying information, and Bonapick shall not be liable for wrongful use or disclosure of your personally-identifying information by any third party.</p>
+
+<h3>Data Integrity</h3>
+
+<p>Bonapick processes personal information only for the purposes for which it was collected and in accordance with this Policy. We review our data collection, storage and processing practices to ensure that we only collect, store and process the personal information needed to provide or improve our services. We take reasonable steps to ensure that the personal information we process is accurate, complete, and current, but we depend on our users to update or correct their personal information whenever necessary.</p>
+
+<h3>Changes to This Privacy Policy</h3>
+
+<p>Bonapick may update this policy. We will notify you about significant changes in the way we treat personal information by sending a notice to the primary email address specified in your Bonapick account or by placing a prominent notice on our site.</p>
+
+<h3>Contact Information & Opt Out</h3>
+
+<p>You may contact Bonapick at anytime to opt-out of using our service by email to contacts@bonapick.com.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <form name="add_to_pick_form" action="/addrequest/" method="POST">
+        <input type='hidden' name='csrfmiddlewaretoken' value='RJRDABC7WvcZgDJIeyeCrxJwEg8kxcmQ' />
+        <input type="hidden" name="add_to_pick" value="add_to_pick"/>
+        <input type="hidden" name="add_to_pick_field" id="add_to_pick_field" value=""/>
+    </form>
+    <footer>
+        <div class="footer_wrapper">
+            <div class="right">
+                <a href="/" class="logo_wrapper"><img src="http://bonapick.com/static/images/logo.png" alt="Bonapick" class="logo"/></a>
+                <div class="clear"></div>
+                <ol class="social_profile_links">
+                    <li><a href="https://www.facebook.com/mybonapick" target="_blank" class="facebook_btn"></a></li>
+                    <li><a href="https://twitter.com/mybonapick" target="_blank" class="twitter_btn"></a></li>
+                    <li><a href="https://plus.google.com/u/0/b/115169845367138658157/115169845367138658157/posts" target="_blank" class="google_plus_btn"></a></li>
+                    
+                    <li><a href="http://pinterest.com/bonapick/pins/ " target="_blank" class="pinterest_btn"></a></li>
+                </ol>
+            </div>
+            <a href="#" class="right up_link"><span class="up_arrow"></span>up</a>
+            <ul class="footer_menu">
+                <li><a href="/">Home</a></li>
+                <li><a href="/about/">About</a></li>
+                <li><a href="/privacy/">Privacy</a></li>
+                <li><a href="/terms/">Terms</a></li>
+                <li style="display:none"><a href="/press/">Press</a></li>
+                <li><a href="/contact_us/">Contact Us</a></li>
+            </ul>
+        </div>
+        <div class="legal">&copy; Bonapick Inc. All Rights Reserved 2013 &reg;</div>
+    </footer>
+    <div id="popup" class="popup">
+        <div class="popup_wrapper">
+            <a href="#" class="close_popup"><b class="close_big"></b></a>
+            <div id="popup_content">
+                <div class="column1">
+                    <img src="http://ecx.images-amazon.com/images/I/41gu9n%2BrE9L.jpg" alt="Some cool item..."/>
+                </div>
+                <div class="column2">
+                    <h2>Casio Men's MRT1200-091 Sport Analog Dive Watch</h2>
+                    <div class="vote_info" data-json='{"percentage":"38","start_angle":"0"}'>
+                        <div class="pie"></div><span>38%</span>
+                        <p class="right">of people think this one is better than the rest</p>
+                    </div>
+                    <a href="#" class="green_btn_small"><span>Add to Bonapick</span></a>
+                    <span class="full_version">to start new Bonapick with it</span>
+                    <div class="separator">or</div>
+                    <a href="#" target="_blank" class="amazon_btn"><span>buy at Amazon</span></a>
+                    
+                    <span class="full_version">for <span class="red">$169.99</span> and FREE SHIPPING</span>
+                </div>
+                <div class="clear"></div>
+            </div>
+        </div>
+    </div>
+    <div id="backgroundPopup"></div>
+
+
+<div id="page-message" class="page-message">
+    <div class="page-message-wrapper ">
+        <div class="page-message-content">
+            
+            <div class="page-message-icon green">
+                <div class="page-message-icon-wrapper green">
+                    <b class="checkmark_small"></b>
+                </div>
+            </div>
+            
+            <div id="page-message-text" class="page-message-text"></div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

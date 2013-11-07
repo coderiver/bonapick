@@ -1,0 +1,213 @@
+.wallet-header{
+    text-align: center;
+    margin: 0 auto 15px auto;
+    color: #999;
+    width: 420px;
+    padding-top:30px;
+}
+.wallet-help-title{
+    text-align: center;
+    margin: 0 auto 15px auto;
+    color: #999;
+    width: 420px;
+    padding-top:30px;
+}
+.wallet > .wallet-row > .divider {
+    margin:30px auto 50px;
+}
+.wallet-row{
+    width: 100%;
+    display: inline-block;
+}
+.wallet-left{
+    float:left;
+    width:50%;
+}
+
+.wallet-right{
+    float:right;
+    width:49%;
+}
+.w-vertical-divider {
+    float: left;
+    width: 1px;
+    border-right: 1px solid #C9C9C9;
+    height: 250px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.chart-container{
+    width: 445px;
+    height: 200px;
+    margin: 5px auto 10px auto;
+    padding: 15px;
+    padding-bottom: 20px;
+}
+
+.chart{
+    width: 100%;
+    height: 100%;
+    font-size: 14px;
+    line-height: 1.2em;
+}
+
+#chart-tooltip{
+    border: 1px solid #999;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.25);
+    padding: 10px;
+    position: absolute;
+    display: none;
+    text-align: center;
+    text-indent: 5px;
+    background: #fff;
+}
+
+#chart-menu{
+    padding-left: 10px;
+}
+
+#chart-menu-container{
+    width: 478px;
+    font-size: 0.7em;
+    margin: 0px auto 0px auto;
+
+}
+
+.win-votes-container{
+    width: 478px;
+    margin: 40px auto 0px auto;
+}
+
+.win-votes{
+    text-align: center;
+    color: #999;
+}
+
+.win-votes-text{
+    margin: 20px 0px 20px 0px;
+    color: rgba(225,225,225,0.8);
+    font-weight: 300;
+    font-size: 3.3em;
+    text-shadow: 1px 1px 1px #fff, 0 0 0 #999, 1px 1px 1px #FFF;
+}
+
+.win-votes-history-link{
+    margin: 10px 0px 10px 0px;
+    display: inline-block;
+    text-decoration: underline;
+    color: rgb(96, 171, 248);
+}
+
+div.claim-votes{
+    width: 260px;
+    margin: 0px 95px 10px auto;
+}
+
+div.claim-votes-note{
+    margin-top: 10px;
+}
+
+div.claim-votes-autoclaim{
+    margin-top: 13px;
+    color: #555;
+    font-size: 1.05em;
+}
+
+.w-table-container{
+    width: 478px;
+    margin: 10px auto 0px auto;
+}
+
+table, th, td{
+    border: 0px none;
+    border-spacing: 0px;
+    padding: 6px 3px;
+}
+
+table{
+    min-width: 390px;
+    text-align: center;
+    margin: 10px auto;
+}
+
+.color-grey{
+    color: #999;
+}
+.color-light-green{
+    color: rgb(72,169,57);
+}
+.color-black{
+    color:#555;
+}
+
+tr.alt{
+    background-color: rgb(221,221,221);
+}
+
+td.highlight{
+    -moz-box-shadow: inset 0 0 5px  rgb(72,169,57);
+    -webkit-box-shadow: inset 0 0 5px rgb(72,169,57);
+    box-shadow: inset 1px 1px 5px rgb(72,169,57);
+    display: block;
+}
+
+/* RESIZING */
+/*
+@media screen and (max-width:959px){
+    #chart-div {
+        display: none;
+    }
+    #redeemed-div{
+        display: none;
+    }
+    .w-vertical-divider{
+        display: none;
+    }
+    .wallet-right{
+        float: none;
+        width: 100%;
+    }
+    .wallet-left{
+        float: none;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+@media screen and (max-width:759px){
+    .color-black{
+        color: #FFF;
+    }
+    tr.alt{
+        background-color: #626267;
+    }
+
+    .win-votes-container{
+        margin-top: 20px;
+    }
+
+    div.claim-votes-autoclaim{
+        color: white;
+    }
+
+
+}
+
+@media screen and (max-width:519px){
+    .wallet-header{
+        width: 100%;
+    }
+    table{
+        min-width: 240px;
+    }
+    .win-votes-container{
+        width: 100%;
+    }
+    .w-table-container{
+        width: 100%;
+    }
+}
+
+@media only screen and (max-device-width: 480px), only screen and (device-aspect-ratio: 2/3), only screen and (device-aspect-ratio: 40/71) {
+}
+*/

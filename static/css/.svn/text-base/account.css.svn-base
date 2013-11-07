@@ -1,0 +1,348 @@
+h2,h3{
+    text-align: center;
+    color: #999;
+    font-size: 2em;
+}
+h4 {
+    text-align: center;
+    color: #999;
+    font-size: 1.2em;
+}
+.red{
+    color: red;
+}
+.form-wrapper{
+    margin: 0 auto;
+    max-width: 85%;
+    min-height:520px;
+    padding-top: 20px;
+}
+div.form{
+    margin: 0px auto 80px;
+    max-width: 91%;
+}
+
+div.profile{
+    padding: 10px 50px 90px;
+    position: relative;
+
+}
+
+div.form, form, .row{
+    overflow: hidden;
+}
+
+.column{
+    width: 49%;
+}
+
+.row{
+    margin: 25px 0px;
+    text-align: center;
+}
+.row2{
+    padding: 0px 70px;
+    margin: 25px 0px;
+}
+
+.form-footer{
+    position: absolute;
+    left: 50%;
+    bottom: 35px;
+    margin-left: -94px;
+}
+div.field{
+   width:50%;
+   margin-left: 10px;
+   float: left;
+}
+div.field_profile{
+   width:65%;
+   margin-left: 10px;
+   float: left;
+}
+div.field input.invalid input.field_profile{
+    border-color: red;
+    box-shadow: inset 0 1px 5px rgba(255, 0, 0, 0.15);
+}
+input[disabled='disabled']{
+    background: #f7f7f7;
+    color: #999;
+    box-shadow: none;
+}
+
+
+.form-field{
+    width:90%;
+}
+
+div.label{
+    width:20%;
+    padding: 6px 0 0 40px;
+    float:left;
+    text-align: right;
+    min-width: 80px;
+}
+
+.pic-wrapper{
+    width:30%;
+    float: left;
+}
+
+.pic-wrapper li{
+    text-align: center;
+    padding: 10px 0px;
+}
+
+.pic-selector{
+    text-align: left;
+    width: 60%;
+    float: right;
+}
+.pic-selector li{
+    padding: 10px 0px;
+}
+
+.pic-limit{
+    font-size:1.2em;
+    color: #999;
+}
+.radio-row li{
+    float: left;
+    padding-left: 20px;
+}
+ul.radio-row{
+    width: 98%;
+    overflow: hidden;
+}
+.vertical-divider {
+    float: left;
+    width: 1px;
+    border-right: 1px solid #999;
+    height: 65%;
+    margin: 20px 0 20px;
+    position: absolute;
+    left: 49%
+}
+
+/*Change Password*/
+.password{
+    width: 60%;
+    padding: 10px 0 5px 0;
+}
+
+/* Change Email */
+div.email{
+    width: 60%;
+    padding: 10px 0 5px 0;
+}
+div.verified{
+    height: 25px;
+    line-height: 25px;
+    float: left;
+    color: #999;
+    padding: 2px 5px;
+    /*background: url('../images/verified.png') no-repeat;*/
+}
+
+div.verified span{
+    float:left;
+    margin-right: 5px;
+    opacity: 0.7;
+}
+
+/* Notifications */
+div.notification{
+    width: 55%;
+    padding: 0 30px;
+}
+
+#div_save_btn{
+    text-align: center;
+}
+
+/* Sign Up */
+div.signup{
+    width:63%;
+}
+
+div.terms-content{
+    text-align: center;
+}
+
+/*Reset Password*/
+form.reset-pass-form{
+    overflow: visible;
+    margin-bottom: 120px;
+}
+.reset-pass{
+    width: 60%;
+    padding-bottom: 5px;
+}
+
+div.form-box{
+    width: 760px;
+    padding: 40px 10px;
+    margin: 20px auto;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.12);
+    border: 1px solid rgb(164,164,164);
+}
+
+div.centered-label{
+    width:100%;
+    text-align: center;
+    font-size: 1.29em;
+}
+div.centered-field{
+    width: auto;
+    margin: 0 auto;
+    text-align: center;
+}
+input.form-field-centered{
+    width:340px;
+}
+.avatar_big {
+    height: 150px;
+    max-width: inherit;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    display: block;
+    overflow: hidden;
+}
+
+/* RESIZING */
+/*
+@media screen and (max-width:959px){
+    .radio-row li{
+        width: 70%;
+    }
+    ul.radio-row{
+        margin-top: -5px;
+    }
+
+    /#Change Password #/
+    .password{
+        width: 70%;
+    }
+
+    /# Change Email #/
+    div.email{
+        width: 80%;
+    }
+
+    div.notification{
+        width: 75%;
+    }
+
+    /#reset password#/
+    div.form-box{
+        width:620px;
+    }
+}
+
+@media screen and (max-width:759px){
+    .vertical-divider{
+        display: none;
+    }
+    div.field, div.label{
+        width: 88%;
+        text-align: left;
+        margin-left: 10px;
+        padding: 6px 0 10px;
+    }
+    .pic-selector, .pic-wrapper{
+        width: 100%;
+    }
+    .pic-limit{
+        font-size: 1em;
+        text-align: center;
+    }
+   .row{
+        margin: 2px 0px;
+        color: #555;
+    }
+    .row2{
+        padding: 0;
+        color: #555;
+    }
+    div.profile{
+        height:340px;
+    }
+
+    .pic-selector li{
+        padding: 1px 0px;
+    }
+    /# Change Email #/
+    div.email, div.notification, div.signup{
+        width: 98%;
+    }
+    div.verified{
+        padding: 7px 5px;
+    }
+
+    /#reset password#/
+    div.form-box{
+        width:460px;
+    }
+
+}
+@media screen and (max-width:1199px){
+    .form-wrapper {
+        max-width: 90%;
+    }  
+    div.email {
+        width: 80%;
+    }
+}
+@media screen and (max-width:519px){
+    .column{
+        width:100%;
+    }
+
+    div.profile{
+        height:auto;
+    }
+    div.field, div.label{
+        width: 92%;
+    }
+    /#Change Password, Email #/
+    .password, div.email{
+        width: 95%;
+    }
+    div.verified{
+        margin: 10px;
+    }
+
+    /#reset password#/
+    div.form-box{
+        width:380px;
+    }
+
+}
+
+@media screen and (max-width:480px){
+    ul.radio-row{
+        margin-top: 0px;
+    }
+
+    /#reset password#/
+    div.form-box{
+        width:320px;
+    }
+
+    input.form-field-centered{
+        width:280px;
+    }
+
+
+}
+
+@media only screen and (max-device-width: 480px), only screen and (device-aspect-ratio: 2/3), only screen and (device-aspect-ratio: 40/71) {
+    ul.radio-row{
+        margin-top: 0px;
+    }
+
+}
+*/
+

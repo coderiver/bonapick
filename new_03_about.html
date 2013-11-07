@@ -1,0 +1,217 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8"/>
+    <!--
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"/>
+    -->
+    <title>new_03_about</title>
+    <link rel="stylesheet" type="text/css" href="static/css/screen.css"/>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script type="text/javascript" src="http://bonapick.com/static/js/jquery.cookie.js"></script>
+    <script type="text/javascript" src="http://bonapick.com/static/js/ZeroClipboard.min.js"></script>
+    <script type="text/javascript" src="http://bonapick.com/static/js/bonapick.js"></script>
+    <script type="text/javascript">
+        function add_to_pick (pick_item){
+            if (pick_item){
+                $('#add_to_pick_field').val(pick_item);
+                $('form[name=add_to_pick_form]').submit();
+            }
+        }
+    </script>
+    
+        <script type="text/javascript">
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    
+            ga('create', 'UA-43177341-1', 'bonapick.com');
+            
+                var dimensionValue = 0;
+            
+            ga('set', 'dimension1', dimensionValue);
+            ga('send', 'pageview');
+        </script>
+        
+    
+    
+</head>
+
+<body>
+
+    
+    <div id="fb-root"></div>
+    <header>
+        <div class="content_wrapper">
+            <a href="/" class="logo"><img src="http://bonapick.com/static/images/logo.png" alt="Bonapick.com" height="38" width="192"/></a>
+            <a href="/" class="logo small"><img src="http://bonapick.com/static/images/logo_small.png" alt="Bonapick.com" height="30" width="30"/></a>
+            
+
+    
+        
+        <a href="http://api.bonapick.com/twauth?state=I60W9NWONN1VRJ8Z9AGN" class="twitter_button_small social_btn"><span><b class="twitter_icon"></b>Sign In</span></a>
+        <a href="https://www.facebook.com/dialog/oauth?state=I60W9NWONN1VRJ8Z9AGN&client_id=476715612423530&redirect_uri=http%3A%2F%2Fapi.bonapick.com%2Ffbauth&scope=email%2Cuser_birthday" class="fb_button_small social_btn"><span><b class="fb_icon"></b>Sign In</span></a>
+        <a href="/addrequest/" class="green_btn_small green_btn_smallontop"><span>Create Your Poll</span></a>
+        <form id="login_form" name="login_form" action="/login/" method="POST">
+            <input type='hidden' name='csrfmiddlewaretoken' value='RJRDABC7WvcZgDJIeyeCrxJwEg8kxcmQ' />
+            <input type="hidden" name="is_home" value="is_home"/>
+            <ul id="native_login">
+                <!--
+                <li><input type="email" name="username" placeholder="email"/></li>
+                <li><input type="password" name="password" placeholder="password"/></li>
+                -->
+                <li class="right">
+                    <a href="/signup/" class="signup_btn">Sign Up</a>
+                    <a href="/login" class="login_btn">Sign In</a>
+                </li>
+            </ul>
+            <ul id="menu">
+                <li>
+                    <a href="#" class="black_btn"><span><b class="menu_icon"></b>Menu</span></a>
+                    <div class="login_menu">
+                        <div class="social_buttons">
+                            <a href="https://www.facebook.com/dialog/oauth?state=I60W9NWONN1VRJ8Z9AGN&client_id=476715612423530&redirect_uri=http%3A%2F%2Fapi.bonapick.com%2Ffbauth&scope=email%2Cuser_birthday" class="fb_button"><span><b class="fb_icon_big"></b>Sign in with Facebook</span></a>
+                            <a href="http://api.bonapick.com/twauth?state=I60W9NWONN1VRJ8Z9AGN" class="twitter_button"><span><b class="twitter_icon_big"></b>Sign in with Twitter</span></a>
+                            <div>Or You Can Just Sign In</div><br/>
+                        </div>
+                        <input type="email" name="username" value="" placeholder="email"/>
+                        <input type="password" name="password" value="" placeholder="password"/>
+                        <a href="#" class="button_blue" onclick="$('#login_form').submit(); return false;"><span>Sign in</span></a>
+                        <div>New Here?</div><br/>
+                        <a href="/signup/" class="button_blue"><span>Sign Up</span></a>
+                    </div>
+                </li>
+            </ul>
+            <input type="submit" class="hidden_submit"/>
+        </form>
+    
+
+        </div>
+    </header>
+    
+    <section class="flatpage-section">
+        <div class="content account">
+            <nav>
+                <div class="content_wrapper">
+                    
+                    <ul id="nav_menu">
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/about/" class="active">About</a></li>
+                        <li><a href="/privacy/" class="">Privacy</a></li>
+                        <li><a href="/terms/" class="">Terms</a></li>
+                        <li style="display:none"><a href="/press/" class="">Press</a></li>
+                        <li><a href="/contact_us/" class="">Contact Us</a></li>
+                        
+                    </ul>
+                    <div class="clear"></div>
+                </div>
+            </nav>
+            <div class="content_wrapper">
+                <div class="flatpage">
+                    <h2>About Us</h2>
+<p>
+Each one of us is a unique individual, but all of us are interested in others opinions.
+</p>
+<p>
+We prefer to go shopping with friends as we always want to ask for advice and get some opinions on “what’s better to buy?”. So, why online shopping should be any different from that?
+</p>
+<p>
+We know that it’s incredibly boring and time-consuming to read a numerous reviews, compare ratings and stars! We would just love to get a quick advice from those who already know what’s best to choose.
+</p>
+<p>
+And the difficulty in choosing is often the cause of headaches. =)
+</p>
+<p>
+That's why we launched Bonapick, the brand new online shopping experience.
+</p>
+<p>
+Once you have gathered to buy something and ponders options, just create a new poll or ‘Bonapick’ to receive the opinion of people who have bought that or a similar item. Basically, our system asks experts –consumers like you– to provide highly valuable opinions within the appropriate product category. It's like to make a shopping with friends or experts.
+</p>
+<p>
+You can also help others make a better choice and earn your expert rating along with cool bonuses if your vote is in majority and thus was decisive for their purchase. 
+</p>
+<p>
+Welcome to truly assertive shopping, Bonluck!
+</p>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <form name="add_to_pick_form" action="/addrequest/" method="POST">
+        <input type='hidden' name='csrfmiddlewaretoken' value='RJRDABC7WvcZgDJIeyeCrxJwEg8kxcmQ' />
+        <input type="hidden" name="add_to_pick" value="add_to_pick"/>
+        <input type="hidden" name="add_to_pick_field" id="add_to_pick_field" value=""/>
+    </form>
+    <footer>
+        <div class="footer_wrapper">
+            <div class="right">
+                <a href="/" class="logo_wrapper"><img src="http://bonapick.com/static/images/logo.png" alt="Bonapick" class="logo"/></a>
+                <div class="clear"></div>
+                <ol class="social_profile_links">
+                    <li><a href="https://www.facebook.com/mybonapick" target="_blank" class="facebook_btn"></a></li>
+                    <li><a href="https://twitter.com/mybonapick" target="_blank" class="twitter_btn"></a></li>
+                    <li><a href="https://plus.google.com/u/0/b/115169845367138658157/115169845367138658157/posts" target="_blank" class="google_plus_btn"></a></li>
+                    
+                    <li><a href="http://pinterest.com/bonapick/pins/ " target="_blank" class="pinterest_btn"></a></li>
+                </ol>
+            </div>
+            <a href="#" class="right up_link"><span class="up_arrow"></span>up</a>
+            <ul class="footer_menu">
+                <li><a href="/">Home</a></li>
+                <li><a href="/about/">About</a></li>
+                <li><a href="/privacy/">Privacy</a></li>
+                <li><a href="/terms/">Terms</a></li>
+                <li style="display:none"><a href="/press/">Press</a></li>
+                <li><a href="/contact_us/">Contact Us</a></li>
+            </ul>
+        </div>
+        <div class="legal">&copy; Bonapick Inc. All Rights Reserved 2013 &reg;</div>
+    </footer>
+    <div id="popup" class="popup">
+        <div class="popup_wrapper">
+            <a href="#" class="close_popup"><b class="close_big"></b></a>
+            <div id="popup_content">
+                <div class="column1">
+                    <img src="http://ecx.images-amazon.com/images/I/41gu9n%2BrE9L.jpg" alt="Some cool item..."/>
+                </div>
+                <div class="column2">
+                    <h2>Casio Men's MRT1200-091 Sport Analog Dive Watch</h2>
+                    <div class="vote_info" data-json='{"percentage":"38","start_angle":"0"}'>
+                        <div class="pie"></div><span>38%</span>
+                        <p class="right">of people think this one is better than the rest</p>
+                    </div>
+                    <a href="#" class="green_btn_small"><span>Add to Bonapick</span></a>
+                    <span class="full_version">to start new Bonapick with it</span>
+                    <div class="separator">or</div>
+                    <a href="#" target="_blank" class="amazon_btn"><span>buy at Amazon</span></a>
+                    
+                    <span class="full_version">for <span class="red">$169.99</span> and FREE SHIPPING</span>
+                </div>
+                <div class="clear"></div>
+            </div>
+        </div>
+    </div>
+    <div id="backgroundPopup"></div>
+
+
+<div id="page-message" class="page-message">
+    <div class="page-message-wrapper ">
+        <div class="page-message-content">
+            
+            <div class="page-message-icon green">
+                <div class="page-message-icon-wrapper green">
+                    <b class="checkmark_small"></b>
+                </div>
+            </div>
+            
+            <div id="page-message-text" class="page-message-text"></div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
