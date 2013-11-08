@@ -133,6 +133,10 @@ header {
 	box-shadow:0 0 8px rgba(0,0,0,0.5);
 	text-shadow:0 1px 0 #fefefe;
 	z-index:100;
+	@include r(step4){
+		height: 86px;
+		text-align: left;
+	}
 }
 .content_wrapper, .footer_wrapper {
 	width:1200px;
@@ -153,6 +157,7 @@ header .logo {
 	float:left;
 	margin-top:9px;
 	line-height:18px;
+	margin-right: 10px;
 	@include r(step4){
 		width: 140px;
 	}
@@ -359,6 +364,9 @@ header #logged_in_form .search_field button {
 	@include r(step1){
 		min-width: 320px;
 	}
+	@include r(step4) {
+		margin-top: 137px;
+	}
 }
 .carousel ul.rslides {
 	position:relative;
@@ -391,11 +399,17 @@ header #logged_in_form .search_field button {
 }
 .home .carousel_wrapper .carousel {
 	min-height:570px;
+	@include r(step4) {
+		min-height: 420px;
+	}
 }
 .home .carousel_wrapper .bx-pager {
 	text-align:center;
 	height:16px;
 	margin:50px 0 0;
+	// @include r(step2) {
+	// 	margin: 0;
+	// }
 }
 .home .carousel_wrapper .bx-pager .bx-pager-item {
 	display:inline-block;
@@ -438,7 +452,9 @@ header #logged_in_form .search_field button {
 	background: -o-linear-gradient(left, rgba(255,255,255,0) 0%,rgba(255,255,255,1) 50%,rgba(255,255,255,0) 100%);
 	background: -ms-linear-gradient(left, rgba(255,255,255,0) 0%,rgba(255,255,255,1) 50%,rgba(255,255,255,0) 100%);
 	background: linear-gradient(to right, rgba(255,255,255,0) 0%,rgba(255, 255, 255, 1) 50%,rgba(255,255,255,0) 100%);
-	
+	@include r(step2) {
+		display: none;
+	}
 }
 .divider_smallonpage {
 	border-right: 1px solid #9C9C9C;
@@ -457,12 +473,19 @@ header #logged_in_form .search_field button {
 	margin-bottom: 10px;
 	margin-top: 10px;
 	font-family: comfortaathin, Arial, Verdana, sans-serif;
+	@include r(step2) {
+		min-height: 1px;
+	}
 }
 .home .carousel_wrapper .title_and_search h1 {	
 	width: 41%;
 	font-size: 3.2em;
 	position: absolute;
 	line-height: 70px;
+	@include r(step2) {
+		position: relative;
+		width: 100%;
+	}
 }
 .home .carousel_wrapper .title_and_search p {
 	width:30%;
@@ -476,12 +499,19 @@ header #logged_in_form .search_field button {
 .home .carousel_wrapper .title_and_search.aftervote .right {
 	margin-top: -2px;
 	margin-right: 20px;
+	@include r(step2) {
+		float: none;
+		width: 100%;
+	}
 }
 .home .carousel_wrapper .title_and_search.aftervote p .button_green {
 	display:block;
 	margin:0 auto;
 	font-size:1.2em;
 	width: 80%;
+	@include r(step2) {
+		padding: 0;
+	}
 }
 .home .carousel_wrapper .title_and_search.aftervote p small {
 	padding:5px 0;
@@ -490,11 +520,17 @@ header #logged_in_form .search_field button {
 .home .carousel_wrapper .title_and_search.aftervote h1 {
 	margin-top: 0;
 	text-align: center;
+	@include r(step2) {
+		display: none;
+	}
 }
 .home .carousel_wrapper .title_and_search.aftervote small.pretitle {
 	left:16.1%;
 	top:28px;
 	position:absolute;
+	@include r(step2) {
+		display: none;
+	}
 }
 .home .carousel_wrapper .featured_request {
 	overflow:hidden;
@@ -512,6 +548,21 @@ header #logged_in_form .search_field button {
 	color:#fff;
 	text-align:center;
 	visibility: hidden;
+	@include r(step2) {
+		width: 150px;
+		height: 150px;
+		-webkit-border-radius: 50%;
+		        border-radius: 50%;
+		margin-left: -75px;
+	}
+	@include r(step4) {
+		width: 120px;
+		height: 120px;
+		-webkit-border-radius: 50%;
+		        border-radius: 50%;
+		margin-left: -60px;
+		bottom: 4%;
+	}
 }
 .circlegreen .checkmark_big {
 	position: absolute;
@@ -528,6 +579,13 @@ header #logged_in_form .search_field button {
 	background-position:center bottom;
 	position:relative;
 	display:inline-block;
+	@include r(step2) {
+		width: 25%;
+		height: 420px;
+	}
+	@include r(step4) {
+		height: 375px;
+	}
 }
 .home .carousel_wrapper .featured_request button {
 	width:100%;
@@ -538,6 +596,12 @@ header #logged_in_form .search_field button {
 	position:relative;
 	display:inline-block;
 	outline: none;
+	@include r(step2) {
+		height: 420px;
+	}
+	@include r(step4) {
+		height: 375px;
+	}
 }
 
 .home .carousel_wrapper .featured_request button:hover .circlegreen{
@@ -560,6 +624,19 @@ header #logged_in_form .search_field button {
 	margin-left:-90px;
 	color:#fff;
 	text-align:center;
+	@include r(step2) {
+		width: 150px;
+		height: 150px;
+		-webkit-border-radius: 50%;
+		        border-radius: 50%;
+		margin-left: -75px;
+	}
+	@include r(step4) {
+		bottom: 4%;
+		width: 120px;
+		height: 120px;
+		margin-left: -60px;
+	}
 }
 .home .carousel_wrapper .featured_request li .result-circle strong {
 	font-weight:200 ! important;
@@ -567,6 +644,12 @@ header #logged_in_form .search_field button {
 	display:block;
 	margin-top:62px;
 	font-family: comfortaathin, Arial, Verdana, sans-serif;
+	@include r(step2) {
+		margin-top: 37px;
+	}
+	@include r(step4) {
+		margin-top: 20px;
+	}
 }
 .home .carousel_wrapper .featured_request li .result-circle small {
 	margin-top:-5px;
@@ -1083,6 +1166,9 @@ form[name="feed_form"] {
 .addrequest {
 	min-height:650px;
 	padding-top: 20px;
+	@include r(steplast) {
+		padding-bottom: 50px;
+	}
 }
 .addrequest .no_result, .contact_us_sent .message_sent, .request_no_found {
 	text-align:center;
@@ -1263,6 +1349,13 @@ form[name="feed_form"] {
 }
 .addrequest button[name="more"] {
 	margin:30px 0;
+	@include r(steplast){
+		width: 130px;
+		float: none;
+		position: absolute;
+		left: 50%;
+		margin-left: -65px;
+	}
 }
 .addrequest .retailer_bar {
 	padding:10px 30px;
@@ -1467,6 +1560,19 @@ form[name="feed_form"] {
 	padding:40px 0;
 	padding-right:17%;
 	background-color: #fff;
+	@include r(step5) {
+		padding-right: 20px;
+	}
+	@include r(step4) {
+		padding-right: 0;
+	}
+	.button_blue.right{
+		@include r(step4){
+			float: none;
+			margin: 0 auto;
+			display: block;
+		}
+	}
 }
 .contact_us .field_wrapper_half {
 	width:50%;
@@ -1474,19 +1580,43 @@ form[name="feed_form"] {
 	margin-bottom:30px;
 	text-align:right;
 	line-height:30px;
+	@include r(step4) {
+		width: 100%;
+		text-align: left;
+	}
 }
 .contact_us .field_wrapper_half > label, .contact_us .field_wrapper_full > label {
 	width:38%;
 	display:block;
 	float:left;
 	text-align:right;
+	@include r(step4) {
+		text-align: left;
+		padding-left: 20px;
+		width: 20%;
+		float: none;
+	}
 }
 .contact_us .field_wrapper_full > label {
 	width:19%;
+	@include r(steplast) {
+		width: auto;
+		float: none;
+		display: block;
+	}
 }
 .contact_us .field_wrapper_half input {
 	float:right;
 	width:50%;
+	@include r(step4) {
+		width: 92%;
+		margin-left: 20px;
+		margin-right: 20px;
+		float: none;
+		-webkit-box-sizing: border-box;
+		   -moz-box-sizing: border-box;
+		        box-sizing: border-box;
+	}
 }
 .contact_us .field_wrapper_full {
 	width:100%;
@@ -1494,10 +1624,17 @@ form[name="feed_form"] {
 .contact_us .field_wrapper_full .subject {
 	display:inline-block;
 	margin-bottom:30px;
+	@include r(step4) {
+		margin-top: 10px;
+	}
 }
 .contact_us .field_wrapper_full .subject li {
 	display:inline-block;
 	margin-left:40px;
+	@include r(step4){
+		display: block;
+		margin-left: 20px;
+	}
 }
 .contact_us textarea {
 	width:73%;
@@ -1506,6 +1643,10 @@ form[name="feed_form"] {
 	margin-bottom:30px;
 	float:right;
 	max-width:744px;
+	@include r(step4) {
+		width: 60%;
+		margin-right: 13px;
+	}
 }
 .contact_us_sent .message_sent {
 	padding:150px 10%;
@@ -1565,7 +1706,7 @@ form[name="feed_form"] {
 	width:43%;
 }
 #login_form{
-	@include r(step3){
+	@include r(step2){
 		display: none;
 	}
 }
@@ -1691,6 +1832,9 @@ footer .social_profile_links li {
 }
 footer .footer_wrapper a.up_link {
 	opacity:0.7;
+	@include r(steplast) {
+		display: none !important;
+	}
 	}
 footer .footer_wrapper a.up_link:hover {
 	opacity:1;
@@ -1760,6 +1904,9 @@ nav.fixed {
 	position:fixed;
 	top:50px;
 	left:0;
+	@include r(step4){
+		top: 86px;
+	}
 }
 nav ul {
 	overflow:hidden;
@@ -1836,6 +1983,11 @@ nav .content_wrapper a.up_link {
 	margin-left:3%;
 	margin-bottom:40px;
 	position: relative;
+	@include r(step5){
+		float: none;
+		width: 90%;
+		margin: 0 auto 10px;
+	}
 }
 .popular_feed .voting_set .wrapper {
 	border:1px solid #a4a4a4;
@@ -1948,7 +2100,8 @@ nav .content_wrapper a.up_link {
 	/*padding:20px;*/
 	background:#fff;
 	z-index:102;
-	width:920px;
+	max-width:920px;
+	width: 90%;
 	box-shadow:0 0 30px rgba(0,0,0,0.65);
 	color:#555;
 	left:0;
@@ -1956,6 +2109,9 @@ nav .content_wrapper a.up_link {
 }
 .popup .popup_wrapper {
 	padding:30px;
+	@include r(step2) {
+		padding: 20px;
+	}
 }
 .popup .close_popup {
 	width:39px;
@@ -1975,8 +2131,12 @@ nav .content_wrapper a.up_link {
 }
 .popup .column1 {
 	float:left;
-	width:480px;
+	width:56%;
 	text-align:center;
+	@include r(step2){
+		float: none;
+		width: 100%;
+	}
 }
 .popup .column1 .button_green, .popup .column1 .button_grey {
 	margin-top:10px;
@@ -1984,8 +2144,19 @@ nav .content_wrapper a.up_link {
 }
 .popup .column2 {
 	float:right;
-	width:360px;
+	width:42%;
 	padding-top: 10%;
+	@include r(step2){
+		float: none;
+		width: 100%;
+		padding-top: 20px;
+		text-align: center;
+	}
+	.full_version{
+		@include r(steplast){
+			display: none;
+		}
+	}
 }
 .popup .column2 .separator {
 	margin:5px 0;
@@ -1998,6 +2169,9 @@ nav .content_wrapper a.up_link {
 .popup .column2 h2 {
 	font-size:1.8em;
 	text-align:center;
+	@include r(step2) {
+		font-size: 1.4em;
+	}
 }
 .popup .column1 .img {
 	max-width:600px;
@@ -2006,6 +2180,11 @@ nav .content_wrapper a.up_link {
 	background-position:center center;
 	background-repeat:no-repeat;
 	background-size: contain;
+	@include r(step2){
+		max-height: 200px;
+		min-height: 150px;
+		margin: 0 auto;
+	}
 }
 .popup .column1.active {
 	position:relative;
@@ -2026,6 +2205,12 @@ nav .content_wrapper a.up_link {
 	background:rgba(0,0,0,0.75);
 	margin:30px 0;
 	overflow:hidden;
+	@include r(step4){
+		width: 90%;
+		display: block;
+		margin: 30px auto;
+		padding: 10px;
+	}
 }
 .popup .zoom_buy {
 	margin:30px 0;
@@ -2254,8 +2439,11 @@ a.up_link:hover .up_arrow {
 	margin-left: -92px;
 	left: 50%;
 	margin-top: 11px;
-	@include r(step2){
-		display: none;
+	@include r(step4){
+		position: relative;
+		display: inline-block;
+		left: auto;
+		margin-left: 0;
 	}
 }
 .amazon_btn {
