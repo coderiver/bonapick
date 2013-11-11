@@ -160,6 +160,7 @@ header .logo {
 	margin-right: 10px;
 	@include r(step4){
 		width: 140px;
+		margin-right: 2px;
 	}
 	img{
 		@include r(step4){
@@ -209,6 +210,9 @@ header a.signup_btn {
 header .twitter_button_small, header .fb_button_small {
 	float:right;
 	margin:13px 0 0 15px;
+	@include r(steplast) {
+		margin: 13px 0 0 5px;
+	}
 }
 header .twitter_button_small .twitter_icon, header .fb_button_small .fb_icon {
 	margin:3px 5px 0 0;
@@ -240,6 +244,11 @@ header #menu {
 	text-shadow:none;
 	text-align:center;
 }
+header #logged_in_form {
+	@include r(step4) {
+		clear: both;
+	}
+}
 header #logged_in_form .search_field {
 	float:left;
 }
@@ -253,6 +262,9 @@ header #logged_in_form .user_menu {
 	min-width:200px;
 	right:0;
 	top:50px;
+	@include r(step4){
+		top: 85px;
+	}
 }
 header #logged_in_form .user_menu .wallet {
 	padding-bottom:5px;
@@ -365,7 +377,7 @@ header #logged_in_form .search_field button {
 		min-width: 320px;
 	}
 	@include r(step4) {
-		margin-top: 137px;
+		margin-top: 105px;
 	}
 }
 .carousel ul.rslides {
@@ -453,7 +465,7 @@ header #logged_in_form .search_field button {
 	background: -ms-linear-gradient(left, rgba(255,255,255,0) 0%,rgba(255,255,255,1) 50%,rgba(255,255,255,0) 100%);
 	background: linear-gradient(to right, rgba(255,255,255,0) 0%,rgba(255, 255, 255, 1) 50%,rgba(255,255,255,0) 100%);
 	@include r(step2) {
-		display: none;
+		margin: 17px auto 0;
 	}
 }
 .divider_smallonpage {
@@ -473,8 +485,9 @@ header #logged_in_form .search_field button {
 	margin-bottom: 10px;
 	margin-top: 10px;
 	font-family: comfortaathin, Arial, Verdana, sans-serif;
-	@include r(step2) {
+	@include r(step3) {
 		min-height: 1px;
+		text-align: center;
 	}
 }
 .home .carousel_wrapper .title_and_search h1 {	
@@ -485,11 +498,35 @@ header #logged_in_form .search_field button {
 	@include r(step2) {
 		position: relative;
 		width: 100%;
+		font-size: 2em;
+		br{
+			content:" ";
+			&:after {
+				content: " ";
+			}
+		}
+	}
+	@include r(steplast) {
+		position: relative;
+		width: 100%;
+		font-size: 1.6em;
+		line-height: 1.2;
+		br{
+			content:" ";
+			&:after {
+				content: " ";
+			}
+		}
 	}
 }
 .home .carousel_wrapper .title_and_search p {
 	width:30%;
 	margin:30px 6% 0 0;
+	@include r(step2) {
+		width: auto;
+		float: none;
+		margin-right: 0;
+	}
 }
 .home .carousel_wrapper .title_and_search.aftervote p {
 	width:45%;
@@ -502,6 +539,7 @@ header #logged_in_form .search_field button {
 	@include r(step2) {
 		float: none;
 		width: 100%;
+		margin-bottom: 10px;
 	}
 }
 .home .carousel_wrapper .title_and_search.aftervote p .button_green {
@@ -521,7 +559,14 @@ header #logged_in_form .search_field button {
 	margin-top: 0;
 	text-align: center;
 	@include r(step2) {
-		display: none;
+		font-size: 2em;
+		line-height: 1;
+		br{
+			content:" ";
+			&:after {
+				content: " ";
+			}
+		}
 	}
 }
 .home .carousel_wrapper .title_and_search.aftervote small.pretitle {
@@ -529,8 +574,11 @@ header #logged_in_form .search_field button {
 	top:28px;
 	position:absolute;
 	@include r(step2) {
-		display: none;
+		position: relative;
+		top: auto;
+		left: auto;
 	}
+
 }
 .home .carousel_wrapper .featured_request {
 	overflow:hidden;
@@ -581,10 +629,10 @@ header #logged_in_form .search_field button {
 	display:inline-block;
 	@include r(step2) {
 		width: 25%;
-		height: 420px;
+		height: 445px;
 	}
 	@include r(step4) {
-		height: 375px;
+		height: 445px;
 	}
 }
 .home .carousel_wrapper .featured_request button {
@@ -597,10 +645,10 @@ header #logged_in_form .search_field button {
 	display:inline-block;
 	outline: none;
 	@include r(step2) {
-		height: 420px;
+		height: 445px;
 	}
 	@include r(step4) {
-		height: 375px;
+		height: 445px;
 	}
 }
 
@@ -1476,6 +1524,10 @@ form[name="feed_form"] {
 	font-size: 1.8em;
 	text-align: justify;
 	color: #555;
+	@include r(steplast) {
+		text-align: left;
+		padding: 20px 10px 0;
+	}
 }
 .howto .divider, .divider {
 	max-width:900px;
@@ -1773,6 +1825,11 @@ footer {
 	color:#fff;
 	box-shadow:0 -1px 6px rgba(0,0,0,0.5);
 	position:relative;
+	@include r(steplast) {
+		width: auto;
+		padding: 25px 15px 40px;
+		overflow: hidden;
+	}
 }
 footer .legal {
 	width:100%;
@@ -1812,7 +1869,7 @@ footer .logo_wrapper {
 		margin:10px 10px 0;
 	}
 	@include r(steplast){
-		margin:10px 20px 0 0;
+		margin:10px 5px 0 0;
 	}
 }
 .footer_menu li a {
@@ -1889,10 +1946,55 @@ nav, .social_bar {
 }
 nav {
 	background:rgba(233, 233, 233, 0.95);
+	@include r(step3) {
+		text-align: right;
+	}
+	&.is-active{
+		background:rgba(233, 233, 233, 0.95);
+		box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
+		.content_wrapper{
+			display: block;
+		}
+	}
+	@include r(step3) {
+		.dropdown_icon {
+			display: block;
+			width: 14px;
+			height: 14px;
+			margin: 10px;
+			background: url(../images/menu.png) no-repeat;
+			-webkit-background-size: cover;
+			     -o-background-size: cover;
+			        background-size: cover;
+			&:hover, &:active{
+				cursor: pointer;
+			}
+		}
+	}
 	.content_wrapper {
+		display: block;
 		@include r(step1){
 			width: 100%;
 			min-width: 100%;
+		}
+		@include r(step3) {
+			display: none;
+		}
+	}
+	@include r(step3) {
+		height: auto;
+		line-height: 1.2;
+		ul{
+			background:rgba(233, 233, 233, 0.95);
+		}
+		ul li {
+			display: block;
+			float: none !important;
+			text-align: left !important;
+			a {
+				display: block;
+				padding: 10px 10px !important;
+			}
 		}
 	}
 
@@ -1969,6 +2071,9 @@ nav .content_wrapper a.up_link {
 .social_bar .wrapper li {
 	display:inline-block;
 	margin-right:20px;
+	@include r(steplast) {
+		margin-right: 5px;
+	}
 }
 /* POPULAR FEED */
 .popular_feed {

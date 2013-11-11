@@ -1,0 +1,1103 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8"/>
+    <!--
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"/>
+    -->
+    <title>Bonapick - Home</title>
+    <link rel="stylesheet" type="text/css" href="static/css/screen.css"/>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script type="text/javascript" src="static/js/common.js"></script>
+    <script type="text/javascript" src="http://bonapick.com/static/js/jquery.cookie.js"></script>
+    <script type="text/javascript" src="http://bonapick.com/static/js/ZeroClipboard.min.js"></script>
+    <script type="text/javascript" src="http://bonapick.com/static/js/bonapick.js"></script>
+    <script type="text/javascript">
+        function add_to_pick (pick_item){
+            if (pick_item){
+                $('#add_to_pick_field').val(pick_item);
+                $('form[name=add_to_pick_form]').submit();
+            }
+        }
+    </script>
+    
+        <script type="text/javascript">
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    
+            ga('create', 'UA-43177341-1', 'bonapick.com');
+            
+                var dimensionValue = 1;
+            
+            ga('set', 'dimension1', dimensionValue);
+            ga('send', 'pageview');
+        </script>
+        
+        <script type="text/javascript">
+        var fb_param = {};
+        fb_param.pixel_id = '6011394000601';
+        fb_param.value = '0.00';
+        fb_param.currency = 'USD';
+        (function(){
+            var fpw = document.createElement('script');
+            fpw.async = true;
+            fpw.src = '//connect.facebook.net/en_US/fp.js';
+            var ref = document.getElementsByTagName('script')[0];
+            ref.parentNode.insertBefore(fpw, ref);
+        })();
+        </script>
+        <noscript><img height="1" width="1" alt="" style="display:none" src="https://www.facebook.com/offsite_event.php?id=6011394000601&amp;value=0&amp;currency=USD" /></noscript>    
+        
+    
+    
+	<script type="text/javascript" src="http://bonapick.com/static/js/flot/jquery.flot.js"></script>
+	<script type="text/javascript" src="http://bonapick.com/static/js/flot/jquery.flot.pie.js"></script>
+	<script type="text/javascript" src="http://bonapick.com/static/js/jquery.bxslider.min.js"></script>
+	<meta property="fb:app_id" content="476715612423530"/>
+	<meta property="og:title" content="Bonapick - social shopping made easy"/>
+	<meta property="og:url" content="http://bonapick.com" />
+	<meta property="og:type" content="website" />
+	<meta property="og:image" content="http://bonapick.com/static/images/bonapick_social_shopping.png" />
+	<meta property="og:description" content="Bonapick is fun and easy! A simple way to choose only the right things for you and make the best purchases online. At Bonapick you can ask your friends and a bright crowd about their opinions on an infinite number of products. They'll quickly advice you - by casting votes - on which item is best for you. And you can also help others make a better choice and earn your expert raiting. Welcome to truly assertive shopping, Bonluck!"/>
+
+</head>
+
+<body class="home">
+
+    
+    <div id="fb-root"></div>
+    <header>
+        <div class="content_wrapper">
+            <a href="/" class="logo"><img src="http://bonapick.com/static/images/logo.png" alt="Bonapick.com" height="38" width="192"/></a>
+            <a href="/" class="logo small"><img src="http://bonapick.com/static/images/logo_small.png" alt="Bonapick.com" height="30" width="30"/></a>
+            
+
+    
+        
+        <form id="logged_in_form" name="logged_in_form" action="/addrequest/" method="POST">
+            <input type='hidden' name='csrfmiddlewaretoken' value='vOfZBcZtEKWIyONqUrWzoPsfOh8eUhOS' />
+            <ul>
+                <!--
+                <li class="search_field">
+                    <input type="text" name="keyword"/>
+                    <button type="submit"><span class="search_icon"></span></button>
+                </li>
+                <li>- or -</li>
+                -->
+                <li>
+                    <a href="/addrequest/" class="green_btn_small green_btn_smallontop"><span>Create Your Poll</span></a>
+                </li>
+                <li>
+                    <a href="#" id="user_menu" class="off">
+                        <img src="http://graph.facebook.com/pismenny.ua/picture?type=normal" alt="Denis"/>
+                        Denis
+                    </a>
+                    <ol class="user_menu">
+                        <li class="wallet">
+                            <a href="/wallet/" class="button_blue"><span>Wallet<b class="wallet_icon"></b></span></a>
+                            <h3>Your Earnings</h3>
+                            <p>Claimed (Last Period):<span>$0.00</span></p>
+                            <p>Won Votes:<span>0</span></p>
+                            <p>Current Rate:<span>$0.17</span></p>
+                        </li>
+                        <li><a href="/account/profile/">Account Settings</a></li>
+                        <li><a href="/addrequest/">Add Request</a></li>
+                        <li><a href="/logout/">Logout</a></li>
+                        <li class="clear"></li>
+                    </ol>
+                </li>
+            </ul>
+        </form>
+    
+
+        </div>
+    </header>
+    
+    <div class="content home">
+        
+            
+
+<nav>
+    <i class="dropdown_icon js-drop"></i>
+    <div class="content_wrapper">
+        <ul id="nav_menu">
+            
+                
+                    <li><a href="/feed/invited/" title="('{0} of your invited polls are waiting to be voted on.', '5')">Invited (5)</a>
+                    </li>
+                
+                    <li><a href="/feed/created/" title="Page with polls you have created.">Created</a>
+                    </li>
+                
+                    <li><a href="/feed/voted/" title="Page with finished polls, where you've been invited to vote.">Voted</a>
+                    </li>
+                
+                    <li><a href="/feed/won/" title="Page with finished polls, where your vote was decisive and made you some money.">Won</a>
+                    </li>
+                
+                <li class="right"><a href="#howto" class="howto">How It Works?</a></li>
+                
+                    <li class="right"><a href="#popular_feed" class="latest">What's Hot</a></li>
+                
+            
+        </ul>
+        <div class="clear"></div>
+    </div>
+</nav>
+        
+        <a name="empty" class="nav_anchor"></a>
+        <div class="carousel_wrapper">
+            <div class="overlay">
+                <div class="content_wrapper">
+                    <div class="title_and_search ">
+                        <div class="voted" style="display:none;">
+                            <p class="right">
+                                <small>Start your poll and</small>
+                                <a href="/addrequest/" class="green_btn_big button_green"><span>Get Opinions Now</span></a>
+                                <small>from your friends and our expert crowd</small>
+                            </p>
+                            <small class="pretitle">Before your every purchase</small>
+                            <div class="divider_promo"></div>
+                            <h1>Ask people<br/>what's best</h1>
+                            <div class="clear"></div>
+                        </div>
+                        <div class="not_voted" >
+                            <p class="right center">Cast your vote, share opinion and help someone to make 
+                            </br>the best choice</p>
+                            <h1 class="center">What's best<br/>to buy?</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel">
+                <form action="" method="post" name="featured_feed_form">
+                    <input type='hidden' name='csrfmiddlewaretoken' value='vOfZBcZtEKWIyONqUrWzoPsfOh8eUhOS' />
+                    <div class="content_wrapper">
+                        <ul id="carousel_slides">
+                            
+                                <li>
+                                    <ol class="featured_request">
+                                        
+                                            
+                                                <li>
+                                                    <button type="submit" name="vote" value="requestid_48-itemid_165" style="background-image:url(http://db58kxikxpd37.cloudfront.net/set11.png);" class="ga_event_handler" data-event='{"category":"featured_image","label":"featured_set","value":0}'><div class="circlegreen"><b class="checkmark_big"></b></div></a>
+                                                </li>
+                                            
+                                        
+                                            
+                                                <li>
+                                                    <button type="submit" name="vote" value="requestid_48-itemid_167" style="background-image:url(http://db58kxikxpd37.cloudfront.net/set13.png);" class="ga_event_handler" data-event='{"category":"featured_image","label":"featured_set","value":0}'><div class="circlegreen"><b class="checkmark_big"></b></div></a>
+                                                </li>
+                                            
+                                        
+                                            
+                                                <li>
+                                                    <button type="submit" name="vote" value="requestid_48-itemid_166" style="background-image:url(http://db58kxikxpd37.cloudfront.net/set12.png);" class="ga_event_handler" data-event='{"category":"featured_image","label":"featured_set","value":0}'><div class="circlegreen"><b class="checkmark_big"></b></div></a>
+                                                </li>
+                                            
+                                        
+                                    </ol>
+                                </li>
+                            
+                                <li>
+                                    <ol class="featured_request">
+                                        
+                                            
+                                                <li>
+                                                    <button type="submit" name="vote" value="requestid_51-itemid_174" style="background-image:url(http://db58kxikxpd37.cloudfront.net/set41.png);" class="ga_event_handler" data-event='{"category":"featured_image","label":"featured_set","value":0}'><div class="circlegreen"><b class="checkmark_big"></b></div></a>
+                                                </li>
+                                            
+                                        
+                                            
+                                                <li>
+                                                    <button type="submit" name="vote" value="requestid_51-itemid_176" style="background-image:url(http://db58kxikxpd37.cloudfront.net/set43.png);" class="ga_event_handler" data-event='{"category":"featured_image","label":"featured_set","value":0}'><div class="circlegreen"><b class="checkmark_big"></b></div></a>
+                                                </li>
+                                            
+                                        
+                                            
+                                                <li>
+                                                    <button type="submit" name="vote" value="requestid_51-itemid_175" style="background-image:url(http://db58kxikxpd37.cloudfront.net/set42.png);" class="ga_event_handler" data-event='{"category":"featured_image","label":"featured_set","value":0}'><div class="circlegreen"><b class="checkmark_big"></b></div></a>
+                                                </li>
+                                            
+                                        
+                                    </ol>
+                                </li>
+                            
+                                <li>
+                                    <ol class="featured_request">
+                                        
+                                            
+                                                <li>
+                                                    <button type="submit" name="vote" value="requestid_49-itemid_169" style="background-image:url(http://db58kxikxpd37.cloudfront.net/set22.png);" class="ga_event_handler" data-event='{"category":"featured_image","label":"featured_set","value":0}'><div class="circlegreen"><b class="checkmark_big"></b></div></a>
+                                                </li>
+                                            
+                                        
+                                            
+                                                <li>
+                                                    <button type="submit" name="vote" value="requestid_49-itemid_168" style="background-image:url(http://db58kxikxpd37.cloudfront.net/set21.png);" class="ga_event_handler" data-event='{"category":"featured_image","label":"featured_set","value":0}'><div class="circlegreen"><b class="checkmark_big"></b></div></a>
+                                                </li>
+                                            
+                                        
+                                            
+                                                <li>
+                                                    <button type="submit" name="vote" value="requestid_49-itemid_170" style="background-image:url(http://db58kxikxpd37.cloudfront.net/set23.png);" class="ga_event_handler" data-event='{"category":"featured_image","label":"featured_set","value":0}'><div class="circlegreen"><b class="checkmark_big"></b></div></a>
+                                                </li>
+                                            
+                                        
+                                    </ol>
+                                </li>
+                            
+                                <li>
+                                    <ol class="featured_request">
+                                        
+                                            
+                                                <li>
+                                                    <button type="submit" name="vote" value="requestid_50-itemid_173" style="background-image:url(http://db58kxikxpd37.cloudfront.net/set33.png);" class="ga_event_handler" data-event='{"category":"featured_image","label":"featured_set","value":0}'><div class="circlegreen"><b class="checkmark_big"></b></div></a>
+                                                </li>
+                                            
+                                        
+                                            
+                                                <li>
+                                                    <button type="submit" name="vote" value="requestid_50-itemid_172" style="background-image:url(http://db58kxikxpd37.cloudfront.net/set32.png);" class="ga_event_handler" data-event='{"category":"featured_image","label":"featured_set","value":0}'><div class="circlegreen"><b class="checkmark_big"></b></div></a>
+                                                </li>
+                                            
+                                        
+                                            
+                                                <li>
+                                                    <button type="submit" name="vote" value="requestid_50-itemid_171" style="background-image:url(http://db58kxikxpd37.cloudfront.net/set31.png);" class="ga_event_handler" data-event='{"category":"featured_image","label":"featured_set","value":0}'><div class="circlegreen"><b class="checkmark_big"></b></div></a>
+                                                </li>
+                                            
+                                        
+                                    </ol>
+                                </li>
+                            
+                        </ul>
+                    </div>
+                </form>
+            </div>
+        </div>
+        
+            <div class="divider signed"></div>
+        
+        <div class="content_wrapper">
+            <section>
+                <a name="popular_feed" class="nav_anchor"></a>
+                
+                <h1 class="section_title mobile">Popular votes:</h1>
+                <ul class="popular_feed">
+                    
+                    <li class="voting_set">
+                        <div class="wrapper">
+                            <div class="question">
+                                
+                                    <div class="social_sharing_icons right">
+    <a href="#" class="share_icon"></a>
+    <ul>
+        <li><a target="_blank" href="http://www.facebook.com/sharer.php?s=100&p[title]=Check%20out%20these%20products%20compared%20side%20by%20side&p[summary]=%0ATake%20a%20look%20at%20this%20poll%20at%20Bonapick.%20You%20might%20find%20it%20interesting.%0AAnd%20you%20can%20also%20create%20your%20own%20poll%20and%20ask%20your%20friends%20and%20a%20bright%0Acrowd%20about%20their%20opinions%20on%20%22What%27s%20best%20to%20buy%3F%22.%0A&p[url]=http%3A//bonapick.com/request/jansport_right_pack_-_expressions_vs_jansport_right_pack_originals_backpack_navy_typ7003_vs_jansport_right_pack_expressions_backpack_barley_brown_vs_jansport_city_scout_backpack_school_bag_grey_vs_jansport_right_pack_backpack_black_one_size&p[images][0]=http%3A//db58kxikxpd37.cloudfront.net/J6zROn.png" class="facebook_icon"></a></li>
+        <li><a target="_blank" href="https://twitter.com/share?text=Check%20out%20these%20products%20compared%20side%20by%20side&url=http%3A//bonapick.com/request/jansport_right_pack_-_expressions_vs_jansport_right_pack_originals_backpack_navy_typ7003_vs_jansport_right_pack_expressions_backpack_barley_brown_vs_jansport_city_scout_backpack_school_bag_grey_vs_jansport_right_pack_backpack_black_one_size" class="twittershare_icon"></a></li>
+        <li><a target="_blank" href="?url=http://bonapick.com/request/jansport_right_pack_-_expressions_vs_jansport_right_pack_originals_backpack_navy_typ7003_vs_jansport_right_pack_expressions_backpack_barley_brown_vs_jansport_city_scout_backpack_school_bag_grey_vs_jansport_right_pack_backpack_black_one_size&media=http%3A//db58kxikxpd37.cloudfront.net/LCAMnK.png&description=Check%20out%20these%20products%20compared%20side%20by%20side%20at%20Bonapick.com" class="pinterest_icon"></a></li>
+        <li><a target="_blank" href="https://plus.google.com/share?url=http://bonapick.com/request/http://bonapick.com" class="googleplus_icon"></a></li>
+        <li><a href="mailto:?subject=Is%20the%20grey%20one%20zingy%20like%20the%20rest%3F&amp;body=%0ATake%20a%20look%20at%20this%20poll%20at%20Bonapick.%20You%20might%20find%20it%20interesting.%0AAnd%20you%20can%20also%20create%20your%20own%20poll%20and%20ask%20your%20friends%20and%20a%20bright%0Acrowd%20about%20their%20opinions%20on%20%22What%27s%20best%20to%20buy%3F%22.%0AHere%20is%20the%20direct%20link%0Ahttp%3A//bonapick.com/request/jansport_right_pack_-_expressions_vs_jansport_right_pack_originals_backpack_navy_typ7003_vs_jansport_right_pack_expressions_backpack_barley_brown_vs_jansport_city_scout_backpack_school_bag_grey_vs_jansport_right_pack_backpack_black_one_size" class="email_icon"></a></li>
+        <li><a href="http://bonapick.com/request/jansport_right_pack_-_expressions_vs_jansport_right_pack_originals_backpack_navy_typ7003_vs_jansport_right_pack_expressions_backpack_barley_brown_vs_jansport_city_scout_backpack_school_bag_grey_vs_jansport_right_pack_backpack_black_one_size" class="sharelink_icon"></a></li>
+    </ul>
+</div>
+                                
+                                <p>Is the grey one zingy like the rest?</p>
+                            </div>
+                            <div class="column1 left">
+                                <div class="image_big"
+                                     style="background-image:url(http://ecx.images-amazon.com/images/I/51LMgo3wRbL.jpg);"
+                                     data-json="{&quot;merchant&quot;:1,&quot;title&quot;:&quot;JanSport Right Pack - Expressions&quot;,&quot;short_url&quot;:&quot;JrVmAVz&quot;,&quot;winner&quot;:1,&quot;request_status&quot;:&quot;voted&quot;,&quot;big_img_url&quot;:&quot;http://ecx.images-amazon.com/images/I/51LMgo3wRbL.jpg&quot;,&quot;start_angle&quot;:1.5,&quot;percentage&quot;:40,&quot;img_url&quot;:&quot;http://ecx.images-amazon.com/images/I/51NJouVJrQL._SL160_.jpg&quot;}">
+                                    <span class="winner_percentage">40%</span>
+                                    <div class="description">
+                                        <p>JanSport Right Pack - Expressions</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="column2 left">
+                                <span></span>
+                                <ol>
+                                    
+                                    <li>
+                                        <a href="#"
+                                           class="image_small"
+                                           style="background-image:url(http://ecx.images-amazon.com/images/I/41cobQmdUTL._SL160_.jpg);"
+                                           data-json="{&quot;merchant&quot;:1,&quot;title&quot;:&quot;JanSport Right Pack Originals Backpack Navy TYP7003&quot;,&quot;short_url&quot;:&quot;RSEbCXv&quot;,&quot;winner&quot;:0,&quot;request_status&quot;:&quot;voted&quot;,&quot;big_img_url&quot;:&quot;http://ecx.images-amazon.com/images/I/41cobQmdUTL.jpg&quot;,&quot;start_angle&quot;:0.2999999999999998,&quot;percentage&quot;:26,&quot;img_url&quot;:&quot;http://ecx.images-amazon.com/images/I/41cobQmdUTL._SL160_.jpg&quot;}">
+                                            <span class="percentage">26%</span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li>
+                                        <a href="#"
+                                           class="image_small"
+                                           style="background-image:url(http://ecx.images-amazon.com/images/I/51evzjjxVGL._SL160_.jpg);"
+                                           data-json="{&quot;merchant&quot;:1,&quot;title&quot;:&quot;JanSport Right Pack Expressions backpack (Barley Brown)&quot;,&quot;short_url&quot;:&quot;aboJbho&quot;,&quot;winner&quot;:0,&quot;request_status&quot;:&quot;voted&quot;,&quot;big_img_url&quot;:&quot;http://ecx.images-amazon.com/images/I/51evzjjxVGL.jpg&quot;,&quot;start_angle&quot;:0.8199999999999998,&quot;percentage&quot;:21,&quot;img_url&quot;:&quot;http://ecx.images-amazon.com/images/I/51evzjjxVGL._SL160_.jpg&quot;}">
+                                            <span class="percentage">21%</span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li>
+                                        <a href="#"
+                                           class="image_small"
+                                           style="background-image:url(http://ecx.images-amazon.com/images/I/312R7AV1GkL._SL160_.jpg);"
+                                           data-json="{&quot;merchant&quot;:1,&quot;title&quot;:&quot;JANSPORT CITY SCOUT BACKPACK SCHOOL BAG, Grey&quot;,&quot;short_url&quot;:&quot;GmyjrVw&quot;,&quot;winner&quot;:0,&quot;request_status&quot;:&quot;voted&quot;,&quot;big_img_url&quot;:&quot;http://ecx.images-amazon.com/images/I/312R7AV1GkL.jpg&quot;,&quot;start_angle&quot;:1.2399999999999998,&quot;percentage&quot;:10,&quot;img_url&quot;:&quot;http://ecx.images-amazon.com/images/I/312R7AV1GkL._SL160_.jpg&quot;}">
+                                            <span class="percentage">10%</span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li>
+                                        <a href="#"
+                                           class="image_small"
+                                           style="background-image:url(http://ecx.images-amazon.com/images/I/41%2BmI5l7uqL._SL160_.jpg);"
+                                           data-json="{&quot;merchant&quot;:1,&quot;title&quot;:&quot;Jansport Right Pack Backpack Black One Size&quot;,&quot;short_url&quot;:&quot;NNErigR&quot;,&quot;winner&quot;:0,&quot;request_status&quot;:&quot;voted&quot;,&quot;big_img_url&quot;:&quot;http://ecx.images-amazon.com/images/I/41%2BmI5l7uqL.jpg&quot;,&quot;start_angle&quot;:1.4399999999999997,&quot;percentage&quot;:3,&quot;img_url&quot;:&quot;http://ecx.images-amazon.com/images/I/41%2BmI5l7uqL._SL160_.jpg&qquot;}">
+                                            <span class="percentage">3%</span>
+                                        </a>
+                                    </li>
+                                    
+                                </ol>
+                            </div>
+                        </div>
+                        <a href="http://bonapick.com/request/jansport_right_pack_-_expressions_vs_jansport_right_pack_originals_backpack_navy_typ7003_vs_jansport_right_pack_expressions_backpack_barley_brown_vs_jansport_city_scout_backpack_school_bag_grey_vs_jansport_right_pack_backpack_black_one_size" class="openset_icongreen"></a>
+                        
+                    </li>
+                    
+                    <li class="voting_set">
+                        <div class="wrapper">
+                            <div class="question">
+                                
+                                    <div class="social_sharing_icons right">
+    <a href="#" class="share_icon"></a>
+    <ul>
+        <li><a target="_blank" href="http://www.facebook.com/sharer.php?s=100&p[title]=Check%20out%20these%20products%20compared%20side%20by%20side&p[summary]=%0ATake%20a%20look%20at%20this%20poll%20at%20Bonapick.%20You%20might%20find%20it%20interesting.%0AAnd%20you%20can%20also%20create%20your%20own%20poll%20and%20ask%20your%20friends%20and%20a%20bright%0Acrowd%20about%20their%20opinions%20on%20%22What%27s%20best%20to%20buy%3F%22.%0A&p[url]=http%3A//bonapick.com/request/men_seiko_snaf13_coutura_coutura_stainless_steel_case_vs_men_seiko_snae65_sportura_sportura_alarm_chronograph_vs_seiko_coutura_mens_quartz_watch_snaf14_vs_seiko_sportura_black_dial_black_leather_band_mens_vs_seiko_mens_snae87_sportura_classic_chronograph_watch&p[images][0]=http%3A//db58kxikxpd37.cloudfront.net/NP6bez.jpg" class="facebook_icon"></a></li>
+        <li><a target="_blank" href="https://twitter.com/share?text=Check%20out%20these%20products%20compared%20side%20by%20side&url=http%3A//bonapick.com/request/men_seiko_snaf13_coutura_coutura_stainless_steel_case_vs_men_seiko_snae65_sportura_sportura_alarm_chronograph_vs_seiko_coutura_mens_quartz_watch_snaf14_vs_seiko_sportura_black_dial_black_leather_band_mens_vs_seiko_mens_snae87_sportura_classic_chronograph_watch" class="twittershare_icon"></a></li>
+        <li><a target="_blank" href="?url=http://bonapick.com/request/men_seiko_snaf13_coutura_coutura_stainless_steel_case_vs_men_seiko_snae65_sportura_sportura_alarm_chronograph_vs_seiko_coutura_mens_quartz_watch_snaf14_vs_seiko_sportura_black_dial_black_leather_band_mens_vs_seiko_mens_snae87_sportura_classic_chronograph_watch&media=http%3A//db58kxikxpd37.cloudfront.net/d6_npP.jpg&description=Check%20out%20these%20products%20compared%20side%20by%20side%20at%20Bonapick.com" class="pinterest_icon"></a></li>
+        <li><a target="_blank" href="https://plus.google.com/share?url=http://bonapick.com/request/http://bonapick.com" class="googleplus_icon"></a></li>
+        <li><a href="mailto:?subject=3%20days%20I%20can%27t%20decide%2C%20need%20your%20advice.%20Which%3F%3F%3F&amp;body=%0ATake%20a%20look%20at%20this%20poll%20at%20Bonapick.%20You%20might%20find%20it%20interesting.%0AAnd%20you%20can%20also%20create%20your%20own%20poll%20and%20ask%20your%20friends%20and%20a%20bright%0Acrowd%20about%20their%20opinions%20on%20%22What%27s%20best%20to%20buy%3F%22.%0AHere%20is%20the%20direct%20link%0Ahttp%3A//bonapick.com/request/men_seiko_snaf13_coutura_coutura_stainless_steel_case_vs_men_seiko_snae65_sportura_sportura_alarm_chronograph_vs_seiko_coutura_mens_quartz_watch_snaf14_vs_seiko_sportura_black_dial_black_leather_band_mens_vs_seiko_mens_snae87_sportura_classic_chronograph_watch" class="email_icon"></a></li>
+        <li><a href="http://bonapick.com/request/men_seiko_snaf13_coutura_coutura_stainless_steel_case_vs_men_seiko_snae65_sportura_sportura_alarm_chronograph_vs_seiko_coutura_mens_quartz_watch_snaf14_vs_seiko_sportura_black_dial_black_leather_band_mens_vs_seiko_mens_snae87_sportura_classic_chronograph_watch" class="sharelink_icon"></a></li>
+    </ul>
+</div>
+                                
+                                <p>3 days I can&#39;t decide, need your advice. Which???</p>
+                            </div>
+                            <div class="column1 left">
+                                <div class="image_big"
+                                     style="background-image:url(http://ecx.images-amazon.com/images/I/41F614Bx4OL.jpg);"
+                                     data-json="{&quot;merchant&quot;:1,&quot;title&quot;:&quot;Men Seiko SNAF13 Coutura Coutura Stainless Steel Case Alarm Chronograph Black Di&quot;,&quot;short_url&quot;:&quot;JQxpaC&quot;,&quot;winner&quot;:1,&quot;request_status&quot;:&quot;voted&quot;,&quot;big_img_url&quot;:&quot;http://ecx.images-amazon.com/images/I/41F614Bx4OL.jpg&quot;,&quot;start_angle&quot;:1.5,&quot;percentage&quot;:65,&quot;img_url&quot;:&quot;http://ecx.images-amazon.com/images/I/41F614Bx4OL._SL160_.jpg&quot;}">
+                                    <span class="winner_percentage">65%</span>
+                                    <div class="description">
+                                        <p>Men Seiko SNAF13 Coutura Coutura Stainless Steel Case Alarm Chronograph Black Di</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="column2 left">
+                                <span></span>
+                                <ol>
+                                    
+                                    <li>
+                                        <a href="#"
+                                           class="image_small"
+                                           style="background-image:url(http://ecx.images-amazon.com/images/I/513%2B-UXJ8qL._SL160_.jpg);"
+                                           data-json="{&quot;merchant&quot;:1,&quot;title&quot;:&quot;Men Seiko SNAE65 Sportura Sportura Alarm Chronograph Black Dial Vented Leather S&quot;,&quot;short_url&quot;:&quot;NvAXsEX&quot;,&quot;winner&quot;:0,&quot;request_status&quot;:&quot;voted&quot;,&quot;big_img_url&quot;:&quot;http://ecx.images-amazon.com/images/I/513%2B-UXJ8qL.jpg&quot;,&quot;start_angle&quot;:0.7999999999999998,&quot;percentage&quot;:19,&quot;img_url&quot;:&quot;http://ecx.images-amazon.com/images/I/513%2B-UXJ8qL._SL160_.jpg&quot;}">
+                                            <span class="percentage">19%</span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li>
+                                        <a href="#"
+                                           class="image_small"
+                                           style="background-image:url(http://ecx.images-amazon.com/images/I/51y54oQZepL._SL160_.jpg);"
+                                           data-json="{&quot;merchant&quot;:1,&quot;title&quot;:&quot;Seiko Coutura Men&#39;s Quartz Watch SNAF14&quot;,&quot;short_url&quot;:&quot;UaFdyWF&quot;,&quot;winner&quot;:0,&quot;request_status&quot;:&quot;voted&quot;,&quot;big_img_url&quot;:&quot;http://ecx.images-amazon.com/images/I/51y54oQZepL.jpg&quot;,&quot;start_angle&quot;:1.1799999999999997,&quot;percentage&quot;:8,&quot;img_url&quot;:&quot;http://ecx.images-amazon.com/images/I/51y54oQZepL._SL160_.jpg&quot;}">
+                                            <span class="percentage">8%</span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li>
+                                        <a href="#"
+                                           class="image_small"
+                                           style="background-image:url(http://ecx.images-amazon.com/images/I/51t8Yp4wbAL._SL160_.jpg);"
+                                           data-json="{&quot;merchant&quot;:1,&quot;title&quot;:&quot;Seiko Sportura Black Dial Black Leather Band Mens Watch&quot;,&quot;short_url&quot;:&quot;odnzpmJ&quot;,&quot;winner&quot;:0,&quot;request_status&quot;:&quot;voted&quot;,&quot;big_img_url&quot;:&quot;http://ecx.images-amazon.com/images/I/51t8Yp4wbAL.jpg&quot;,&quot;start_angle&quot;:1.3399999999999996,&quot;percentage&quot;:7,&quot;img_url&quot;:&quot;http://ecx.images-amazon.com/images/I/51t8Yp4wbAL._SL160_.jpg&quot;}">
+                                            <span class="percentage">7%</span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li>
+                                        <a href="#"
+                                           class="image_small"
+                                           style="background-image:url(http://ecx.images-amazon.com/images/I/519OsVDHMgL._SL160_.jpg);"
+                                           data-json="{&quot;merchant&quot;:1,&quot;title&quot;:&quot;Seiko Men&#39;s SNAE87 Sportura Classic Chronograph Watch&quot;,&quot;short_url&quot;:&quot;oIQqdEF&quot;,&quot;winner&quot;:0,&quot;request_status&quot;:&quot;voted&quot;,&quot;big_img_url&quot;:&quot;http://ecx.images-amazon.com/images/I/519OsVDHMgL.jpg&quot;,&quot;start_angle&quot;:1.4799999999999995,&quot;percentage&quot;:1,&quot;img_url&quot;:&quot;http://ecx.images-amazon.com/images/I/519OsVDHMgL._SL160_.jpg&quot;}">
+                                            <span class="percentage">1%</span>
+                                        </a>
+                                    </li>
+                                    
+                                </ol>
+                            </div>
+                        </div>
+                        <a href="http://bonapick.com/request/men_seiko_snaf13_coutura_coutura_stainless_steel_case_vs_men_seiko_snae65_sportura_sportura_alarm_chronograph_vs_seiko_coutura_mens_quartz_watch_snaf14_vs_seiko_sportura_black_dial_black_leather_band_mens_vs_seiko_mens_snae87_sportura_classic_chronograph_watch" class="openset_icongreen"></a>
+                        
+                    </li>
+                    
+                    <li class="voting_set">
+                        <div class="wrapper">
+                            <div class="question">
+                                
+                                    <div class="social_sharing_icons right">
+    <a href="#" class="share_icon"></a>
+    <ul>
+        <li><a target="_blank" href="http://www.facebook.com/sharer.php?s=100&p[title]=Check%20out%20these%20products%20compared%20side%20by%20side&p[summary]=%0ATake%20a%20look%20at%20this%20poll%20at%20Bonapick.%20You%20might%20find%20it%20interesting.%0AAnd%20you%20can%20also%20create%20your%20own%20poll%20and%20ask%20your%20friends%20and%20a%20bright%0Acrowd%20about%20their%20opinions%20on%20%22What%27s%20best%20to%20buy%3F%22.%0A&p[url]=http%3A//bonapick.com/request/asics_womens_gel-noosa_tri_7_running_shoe_electric_vs_asics_gel_noosa_tri8_women_shoe_size_11_vs_asics_womens_gel-kayano_18_running_shoe_neon_pink_vs_asics_womens_gel_noosa_tri_7_running_shoe_neon_pink_vs_asics_womens_gel-noosa_tri_8_running_shoe_black_onyx&p[images][0]=http%3A//db58kxikxpd37.cloudfront.net/3U6Tu8.jpg" class="facebook_icon"></a></li>
+        <li><a target="_blank" href="https://twitter.com/share?text=Check%20out%20these%20products%20compared%20side%20by%20side&url=http%3A//bonapick.com/request/asics_womens_gel-noosa_tri_7_running_shoe_electric_vs_asics_gel_noosa_tri8_women_shoe_size_11_vs_asics_womens_gel-kayano_18_running_shoe_neon_pink_vs_asics_womens_gel_noosa_tri_7_running_shoe_neon_pink_vs_asics_womens_gel-noosa_tri_8_running_shoe_black_onyx" class="twittershare_icon"></a></li>
+        <li><a target="_blank" href="?url=http://bonapick.com/request/asics_womens_gel-noosa_tri_7_running_shoe_electric_vs_asics_gel_noosa_tri8_women_shoe_size_11_vs_asics_womens_gel-kayano_18_running_shoe_neon_pink_vs_asics_womens_gel_noosa_tri_7_running_shoe_neon_pink_vs_asics_womens_gel-noosa_tri_8_running_shoe_black_onyx&media=http%3A//db58kxikxpd37.cloudfront.net/psuIRt.jpg&description=Check%20out%20these%20products%20compared%20side%20by%20side%20at%20Bonapick.com" class="pinterest_icon"></a></li>
+        <li><a target="_blank" href="https://plus.google.com/share?url=http://bonapick.com/request/http://bonapick.com" class="googleplus_icon"></a></li>
+        <li><a href="mailto:?subject=All%20are%20so%20cool%2C%20help%20me%20please%20to%20choose%21&amp;body=%0ATake%20a%20look%20at%20this%20poll%20at%20Bonapick.%20You%20might%20find%20it%20interesting.%0AAnd%20you%20can%20also%20create%20your%20own%20poll%20and%20ask%20your%20friends%20and%20a%20bright%0Acrowd%20about%20their%20opinions%20on%20%22What%27s%20best%20to%20buy%3F%22.%0AHere%20is%20the%20direct%20link%0Ahttp%3A//bonapick.com/request/asics_womens_gel-noosa_tri_7_running_shoe_electric_vs_asics_gel_noosa_tri8_women_shoe_size_11_vs_asics_womens_gel-kayano_18_running_shoe_neon_pink_vs_asics_womens_gel_noosa_tri_7_running_shoe_neon_pink_vs_asics_womens_gel-noosa_tri_8_running_shoe_black_onyx" class="email_icon"></a></li>
+        <li><a href="http://bonapick.com/request/asics_womens_gel-noosa_tri_7_running_shoe_electric_vs_asics_gel_noosa_tri8_women_shoe_size_11_vs_asics_womens_gel-kayano_18_running_shoe_neon_pink_vs_asics_womens_gel_noosa_tri_7_running_shoe_neon_pink_vs_asics_womens_gel-noosa_tri_8_running_shoe_black_onyx" class="sharelink_icon"></a></li>
+    </ul>
+</div>
+                                
+                                <p>All are so cool, help me please to choose!</p>
+                            </div>
+                            <div class="column1 left">
+                                <div class="image_big"
+                                     style="background-image:url(http://ecx.images-amazon.com/images/I/41UNOGKX%2BUL.jpg);"
+                                     data-json="{&quot;merchant&quot;:1,&quot;title&quot;:&quot;ASICS Women&#39;s Gel-Noosa Tri 7 Running Shoe,Electric Purple/White/Sun,8 M US&quot;,&quot;short_url&quot;:&quot;JsNPYRY&quot;,&quot;winner&quot;:1,&quot;request_status&quot;:&quot;voted&quot;,&quot;big_img_url&quot;:&quot;http://ecx.images-amazon.com/images/I/41UNOGKX%2BUL.jpg&quot;,&quot;start_angle&quot;:1.5,&quot;percentage&quot;:46,&quot;img_url&quot;:&quot;http://ecx.images-amazon.com/images/I/41UNOGKX%2BUL._SL160_.jpg&quot;}">
+                                    <span class="winner_percentage">46%</span>
+                                    <div class="description">
+                                        <p>ASICS Women&#39;s Gel-Noosa Tri 7 Running Shoe,Electric Purple/White/Sun,8 M US</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="column2 left">
+                                <span></span>
+                                <ol>
+                                    
+                                    <li>
+                                        <a href="#"
+                                           class="image_small"
+                                           style="background-image:url(http://ecx.images-amazon.com/images/I/31y-F7j5elL._SL160_.jpg);"
+                                           data-json="{&quot;merchant&quot;:1,&quot;title&quot;:&quot;ASICS GEL NOOSA TRI8 WOMEN Shoe Size 11&quot;,&quot;short_url&quot;:&quot;hqeDMyB&quot;,&quot;winner&quot;:0,&quot;request_status&quot;:&quot;voted&quot;,&quot;big_img_url&quot;:&quot;http://ecx.images-amazon.com/images/I/31y-F7j5elL._SL160_.jpg&quot;,&quot;start_angle&quot;:0.41999999999999993,&quot;percentage&quot;:20,&quot;img_url&quot;:&quot;http://ecx.images-amazon.com/images/I/31y-F7j5elL._SL160_.jpg&quot;}">
+                                            <span class="percentage">20%</span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li>
+                                        <a href="#"
+                                           class="image_small"
+                                           style="background-image:url(http://ecx.images-amazon.com/images/I/51tq9fGJijL._SL160_.jpg);"
+                                           data-json="{&quot;merchant&quot;:1,&quot;title&quot;:&quot;Asics Women&#39;s Gel-Kayano 18 Running Shoe, Neon Pink/Turquoise/Electric Purple, 6 M US&quot;,&quot;short_url&quot;:&quot;BgXDzwQ&quot;,&quot;winner&quot;:0,&quot;request_status&quot;:&quot;voted&quot;,&quot;big_img_url&quot;:&quot;http://ecx.images-amazon.com/images/I/51tq9fGJijL._SL160_.jpg&quot;,&quot;start_angle&quot;:0.82,&quot;percentage&quot;:15,&quot;img_url&quot;:&quot;http://ecx.images-amazon.com/images/I/51tq9fGJijL._SL160_.jpg&quot;}">
+                                            <span class="percentage">15%</span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li>
+                                        <a href="#"
+                                           class="image_small"
+                                           style="background-image:url(http://ecx.images-amazon.com/images/I/51g7tQlCWFL._SL160_.jpg);"
+                                           data-json="{&quot;merchant&quot;:1,&quot;title&quot;:&quot;ASICS Women&#39;s Gel Noosa Tri 7 Running Shoe,Neon Pink/Coral/Noosa Glow,8 M US&quot;,&quot;short_url&quot;:&quot;mDOAgWj&quot;,&quot;winner&quot;:0,&quot;request_status&quot;:&quot;voted&quot;,&quot;big_img_url&quot;:&quot;http://ecx.images-amazon.com/images/I/51g7tQlCWFL.jpg&quot;,&quot;start_angle&quot;:1.1199999999999999,&quot;percentage&quot;:12,&quot;img_url&quot;:&quot;http://ecx.images-amazon.com/images/I/51g7tQlCWFL._SL160_.jpg&quot;}">
+                                            <span class="percentage">12%</span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li>
+                                        <a href="#"
+                                           class="image_small"
+                                           style="background-image:url(http://ecx.images-amazon.com/images/I/51pK5PDglaL._SL160_.jpg);"
+                                           data-json="{&quot;merchant&quot;:1,&quot;title&quot;:&quot;ASICS Women&#39;s GEL-Noosa Tri 8 Running Shoe,Black/Onyx/Confetti,8.5 M US&quot;,&quot;short_url&quot;:&quot;ClkDzr&quot;,&quot;winner&quot;:0,&quot;request_status&quot;:&quot;voted&quot;,&quot;big_img_url&quot;:&quot;http://ecx.images-amazon.com/images/I/51pK5PDglaL.jpg&quot;,&quot;start_angle&quot;:1.3599999999999999,&quot;percentage&quot;:7,&quot;img_url&quot;:&quot;http://ecx.images-amazon.com/images/I/51pK5PDglaL._SL160_.jpg&quot;}">
+                                            <span class="percentage">7%</span>
+                                        </a>
+                                    </li>
+                                    
+                                </ol>
+                            </div>
+                        </div>
+                        <a href="http://bonapick.com/request/asics_womens_gel-noosa_tri_7_running_shoe_electric_vs_asics_gel_noosa_tri8_women_shoe_size_11_vs_asics_womens_gel-kayano_18_running_shoe_neon_pink_vs_asics_womens_gel_noosa_tri_7_running_shoe_neon_pink_vs_asics_womens_gel-noosa_tri_8_running_shoe_black_onyx" class="openset_icongreen"></a>
+                        
+                    </li>
+                    
+                    <li class="voting_set">
+                        <div class="wrapper">
+                            <div class="question">
+                                
+                                    <div class="social_sharing_icons right">
+    <a href="#" class="share_icon"></a>
+    <ul>
+        <li><a target="_blank" href="http://www.facebook.com/sharer.php?s=100&p[title]=Check%20out%20these%20products%20compared%20side%20by%20side&p[summary]=%0ATake%20a%20look%20at%20this%20poll%20at%20Bonapick.%20You%20might%20find%20it%20interesting.%0AAnd%20you%20can%20also%20create%20your%20own%20poll%20and%20ask%20your%20friends%20and%20a%20bright%0Acrowd%20about%20their%20opinions%20on%20%22What%27s%20best%20to%20buy%3F%22.%0A&p[url]=http%3A//bonapick.com/request/hobo_rachel_wallet_caramel_one_size_vs_hobo_rachel_wallet_honey_snake_one_size_vs_hobo_rachel_tri-fold_wallet_black_one_size_vs_hobo_rachel_vi-3356flam_wallet_flame_one_size&p[images][0]=http%3A//db58kxikxpd37.cloudfront.net/C_e052.jpg" class="facebook_icon"></a></li>
+        <li><a target="_blank" href="https://twitter.com/share?text=Check%20out%20these%20products%20compared%20side%20by%20side&url=http%3A//bonapick.com/request/hobo_rachel_wallet_caramel_one_size_vs_hobo_rachel_wallet_honey_snake_one_size_vs_hobo_rachel_tri-fold_wallet_black_one_size_vs_hobo_rachel_vi-3356flam_wallet_flame_one_size" class="twittershare_icon"></a></li>
+        <li><a target="_blank" href="?url=http://bonapick.com/request/hobo_rachel_wallet_caramel_one_size_vs_hobo_rachel_wallet_honey_snake_one_size_vs_hobo_rachel_tri-fold_wallet_black_one_size_vs_hobo_rachel_vi-3356flam_wallet_flame_one_size&media=http%3A//db58kxikxpd37.cloudfront.net/d6Aovy.jpg&description=Check%20out%20these%20products%20compared%20side%20by%20side%20at%20Bonapick.com" class="pinterest_icon"></a></li>
+        <li><a target="_blank" href="https://plus.google.com/share?url=http://bonapick.com/request/http://bonapick.com" class="googleplus_icon"></a></li>
+        <li><a href="mailto:?subject=How%20to%20choose%20if%20I%20like%20all%3F%20Help%21&amp;body=%0ATake%20a%20look%20at%20this%20poll%20at%20Bonapick.%20You%20might%20find%20it%20interesting.%0AAnd%20you%20can%20also%20create%20your%20own%20poll%20and%20ask%20your%20friends%20and%20a%20bright%0Acrowd%20about%20their%20opinions%20on%20%22What%27s%20best%20to%20buy%3F%22.%0AHere%20is%20the%20direct%20link%0Ahttp%3A//bonapick.com/request/hobo_rachel_wallet_caramel_one_size_vs_hobo_rachel_wallet_honey_snake_one_size_vs_hobo_rachel_tri-fold_wallet_black_one_size_vs_hobo_rachel_vi-3356flam_wallet_flame_one_size" class="email_icon"></a></li>
+        <li><a href="http://bonapick.com/request/hobo_rachel_wallet_caramel_one_size_vs_hobo_rachel_wallet_honey_snake_one_size_vs_hobo_rachel_tri-fold_wallet_black_one_size_vs_hobo_rachel_vi-3356flam_wallet_flame_one_size" class="sharelink_icon"></a></li>
+    </ul>
+</div>
+                                
+                                <p>How to choose if I like all? Help!</p>
+                            </div>
+                            <div class="column1 left">
+                                <div class="image_big"
+                                     style="background-image:url(http://ecx.images-amazon.com/images/I/41hqsvmSE4L.jpg);"
+                                     data-json="{&quot;merchant&quot;:1,&quot;title&quot;:&quot;Hobo  Rachel Wallet,Caramel,One Size&quot;,&quot;short_url&quot;:&quot;MefdwZL&quot;,&quot;winner&quot;:1,&quot;request_status&quot;:&quot;voted&quot;,&quot;big_img_url&quot;:&quot;http://ecx.images-amazon.com/images/I/41hqsvmSE4L.jpg&quot;,&quot;start_angle&quot;:1.5,&quot;percentage&quot;:62,&quot;img_url&quot;:&quot;http://ecx.images-amazon.com/images/I/41n5CEfuumL._SL160_.jpg&quot;}">
+                                    <span class="winner_percentage">62%</span>
+                                    <div class="description">
+                                        <p>Hobo  Rachel Wallet,Caramel,One Size</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="column2 left">
+                                <span></span>
+                                <ol>
+                                    
+                                    <li>
+                                        <a href="#"
+                                           class="image_small"
+                                           style="background-image:url(http://ecx.images-amazon.com/images/I/51M9lHb8Z%2BL._SL160_.jpg);"
+                                           data-json="{&quot;merchant&quot;:1,&quot;title&quot;:&quot;Hobo  Rachel Wallet,Honey Snake,One Size&quot;,&quot;short_url&quot;:&quot;gXcEsGE&quot;,&quot;winner&quot;:0,&quot;request_status&quot;:&quot;voted&quot;,&quot;big_img_url&quot;:&quot;http://ecx.images-amazon.com/images/I/51M9lHb8Z%2BL.jpg&quot;,&quot;start_angle&quot;:0.7400000000000002,&quot;percentage&quot;:21,&quot;img_url&quot;:&quot;http://ecx.images-amazon.com/images/I/51M9lHb8Z%2BL._SL160_.jpg&quot;}">
+                                            <span class="percentage">21%</span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li>
+                                        <a href="#"
+                                           class="image_small"
+                                           style="background-image:url(http://ecx.images-amazon.com/images/I/41kAXVBcYiL._SL160_.jpg);"
+                                           data-json="{&quot;merchant&quot;:1,&quot;title&quot;:&quot;Hobo  Rachel Tri-Fold Wallet,Black,one size&quot;,&quot;short_url&quot;:&quot;mWdqmqj&quot;,&quot;winner&quot;:0,&quot;request_status&quot;:&quot;voted&quot;,&quot;big_img_url&quot;:&quot;http://ecx.images-amazon.com/images/I/41kAXVBcYiL.jpg&quot;,&quot;start_angle&quot;:1.1600000000000001,&quot;percentage&quot;:9,&quot;img_url&quot;:&quot;http://ecx.images-amazon.com/images/I/41kAXVBcYiL._SL160_.jpg&quot;}">
+                                            <span class="percentage">9%</span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li>
+                                        <a href="#"
+                                           class="image_small"
+                                           style="background-image:url(http://ecx.images-amazon.com/images/I/41G645MrKgL._SL160_.jpg);"
+                                           data-json="{&quot;merchant&quot;:1,&quot;title&quot;:&quot;Hobo  Rachel VI-3356FLAM Wallet,Flame,One Size&quot;,&quot;short_url&quot;:&quot;hrswqWp&quot;,&quot;winner&quot;:0,&quot;request_status&quot;:&quot;voted&quot;,&quot;big_img_url&quot;:&quot;http://ecx.images-amazon.com/images/I/41G645MrKgL.jpg&quot;,&quot;start_angle&quot;:1.34,&quot;percentage&quot;:8,&quot;img_url&quot;:&quot;http://ecx.images-amazon.com/images/I/41G645MrKgL._SL160_.jpg&quot;}">
+                                            <span class="percentage">8%</span>
+                                        </a>
+                                    </li>
+                                    
+                                </ol>
+                            </div>
+                        </div>
+                        <a href="http://bonapick.com/request/hobo_rachel_wallet_caramel_one_size_vs_hobo_rachel_wallet_honey_snake_one_size_vs_hobo_rachel_tri-fold_wallet_black_one_size_vs_hobo_rachel_vi-3356flam_wallet_flame_one_size" class="openset_icongreen"></a>
+                        
+                    </li>
+                    
+                    <li class="voting_set">
+                        <div class="wrapper">
+                            <div class="question">
+                                
+                                    <div class="social_sharing_icons right">
+    <a href="#" class="share_icon"></a>
+    <ul>
+        <li><a target="_blank" href="http://www.facebook.com/sharer.php?s=100&p[title]=Check%20out%20these%20products%20compared%20side%20by%20side&p[summary]=%0ATake%20a%20look%20at%20this%20poll%20at%20Bonapick.%20You%20might%20find%20it%20interesting.%0AAnd%20you%20can%20also%20create%20your%20own%20poll%20and%20ask%20your%20friends%20and%20a%20bright%0Acrowd%20about%20their%20opinions%20on%20%22What%27s%20best%20to%20buy%3F%22.%0A&p[url]=http%3A//bonapick.com/request/otterbox_defender_series_studio_collection_eternality_vs_otterbox_defender_series_eternality_collection_case_vs_otterbox_defender_series_studio_collection_for_iphone_vs_otterbox_defender_series_surreal_collection_case_for&p[images][0]=http%3A//db58kxikxpd37.cloudfront.net/g1s7Sv.jpg" class="facebook_icon"></a></li>
+        <li><a target="_blank" href="https://twitter.com/share?text=Check%20out%20these%20products%20compared%20side%20by%20side&url=http%3A//bonapick.com/request/otterbox_defender_series_studio_collection_eternality_vs_otterbox_defender_series_eternality_collection_case_vs_otterbox_defender_series_studio_collection_for_iphone_vs_otterbox_defender_series_surreal_collection_case_for" class="twittershare_icon"></a></li>
+        <li><a target="_blank" href="?url=http://bonapick.com/request/otterbox_defender_series_studio_collection_eternality_vs_otterbox_defender_series_eternality_collection_case_vs_otterbox_defender_series_studio_collection_for_iphone_vs_otterbox_defender_series_surreal_collection_case_for&media=http%3A//db58kxikxpd37.cloudfront.net/Knc3YT.jpg&description=Check%20out%20these%20products%20compared%20side%20by%20side%20at%20Bonapick.com" class="pinterest_icon"></a></li>
+        <li><a target="_blank" href="https://plus.google.com/share?url=http://bonapick.com/request/http://bonapick.com" class="googleplus_icon"></a></li>
+        <li><a href="mailto:?subject=Which%20case%20do%20you%20think%20is%20more%20beautiful%3F%20I%27m%2023%20%3D%29%20Thanks%21&amp;body=%0ATake%20a%20look%20at%20this%20poll%20at%20Bonapick.%20You%20might%20find%20it%20interesting.%0AAnd%20you%20can%20also%20create%20your%20own%20poll%20and%20ask%20your%20friends%20and%20a%20bright%0Acrowd%20about%20their%20opinions%20on%20%22What%27s%20best%20to%20buy%3F%22.%0AHere%20is%20the%20direct%20link%0Ahttp%3A//bonapick.com/request/otterbox_defender_series_studio_collection_eternality_vs_otterbox_defender_series_eternality_collection_case_vs_otterbox_defender_series_studio_collection_for_iphone_vs_otterbox_defender_series_surreal_collection_case_for" class="email_icon"></a></li>
+        <li><a href="http://bonapick.com/request/otterbox_defender_series_studio_collection_eternality_vs_otterbox_defender_series_eternality_collection_case_vs_otterbox_defender_series_studio_collection_for_iphone_vs_otterbox_defender_series_surreal_collection_case_for" class="sharelink_icon"></a></li>
+    </ul>
+</div>
+                                
+                                <p>Which case do you think is more beautiful? I&#39;m 23 =) Thanks!</p>
+                            </div>
+                            <div class="column1 left">
+                                <div class="image_big"
+                                     style="background-image:url(http://ecx.images-amazon.com/images/I/51DTIfr41vL.jpg);"
+                                     data-json="{&quot;merchant&quot;:1,&quot;title&quot;:&quot;OtterBox Defender Series Studio Collection Eternality Case for iPhone 4/4S - Retail Packaging - Celestial&quot;,&quot;short_url&quot;:&quot;FQTZqMB&quot;,&quot;winner&quot;:1,&quot;request_status&quot;:&quot;voted&quot;,&quot;big_img_url&quot;:&quot;http://ecx.images-amazon.com/images/I/51DTIfr41vL.jpg&quot;,&quot;start_angle&quot;:1.5,&quot;percentage&quot;:60,&quot;img_url&quot;:&quot;http://ecx.images-amazon.com/images/I/51DTIfr41vL._SL160_.jpg&quot;}">
+                                    <span class="winner_percentage">60%</span>
+                                    <div class="description">
+                                        <p>OtterBox Defender Series Studio Collection Eternality Case for iPhone 4/4S - Retail Packaging - Celestial</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="column2 left">
+                                <span></span>
+                                <ol>
+                                    
+                                    <li>
+                                        <a href="#"
+                                           class="image_small"
+                                           style="background-image:url(http://ecx.images-amazon.com/images/I/51W25o4dwIL._SL160_.jpg);"
+                                           data-json="{&quot;merchant&quot;:1,&quot;title&quot;:&quot;OtterBox Defender Series Eternality Collection Case for iPhone 4/4S - Retail Packaging - Sublime&quot;,&quot;short_url&quot;:&quot;fsCaIde&quot;,&quot;winner&quot;:0,&quot;request_status&quot;:&quot;voted&quot;,&quot;big_img_url&quot;:&quot;http://ecx.images-amazon.com/images/I/51W25o4dwIL.jpg&quot;,&quot;start_angle&quot;:0.7000000000000002,&quot;percentage&quot;:21,&quot;img_url&quot;:&quot;http://ecx.images-amazon.com/images/I/51W25o4dwIL._SL160_.jpg&quot;}">
+                                            <span class="percentage">21%</span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li>
+                                        <a href="#"
+                                           class="image_small"
+                                           style="background-image:url(http://ecx.images-amazon.com/images/I/51cARlKmMwL._SL160_.jpg);"
+                                           data-json="{&quot;merchant&quot;:1,&quot;title&quot;:&quot;OtterBox Defender Series Studio Collection for iPhone 4 and 4S - Retail Packaging - Perennial&quot;,&quot;short_url&quot;:&quot;mRYNXwo&quot;,&quot;winner&quot;:0,&quot;request_status&quot;:&quot;voted&quot;,&quot;big_img_url&quot;:&quot;http://ecx.images-amazon.com/images/I/51cARlKmMwL.jpg&quot;,&quot;start_angle&quot;:1.12,&quot;percentage&quot;:10,&quot;img_url&quot;:&quot;http://ecx.images-amazon.com/images/I/51cARlKmMwL._SL160_.jpg&quot;}">
+                                            <span class="percentage">10%</span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li>
+                                        <a href="#"
+                                           class="image_small"
+                                           style="background-image:url(http://ecx.images-amazon.com/images/I/51suy-xy5uL._SL160_.jpg);"
+                                           data-json="{&quot;merchant&quot;:1,&quot;title&quot;:&quot;OtterBox Defender Series Surreal Collection Case for iPhone 4/4S -Retail Packaging - Dream&quot;,&quot;short_url&quot;:&quot;czvoyMp&quot;,&quot;winner&quot;:0,&quot;request_status&quot;:&quot;voted&quot;,&quot;big_img_url&quot;:&quot;http://ecx.images-amazon.com/images/I/51suy-xy5uL.jpg&quot;,&quot;start_angle&quot;:1.32,&quot;percentage&quot;:9,&quot;img_url&quot;:&quot;http://ecx.images-amazon.com/images/I/51suy-xy5uL._SL160_.jpg&quot;}">
+                                            <span class="percentage">9%</span>
+                                        </a>
+                                    </li>
+                                    
+                                </ol>
+                            </div>
+                        </div>
+                        <a href="http://bonapick.com/request/otterbox_defender_series_studio_collection_eternality_vs_otterbox_defender_series_eternality_collection_case_vs_otterbox_defender_series_studio_collection_for_iphone_vs_otterbox_defender_series_surreal_collection_case_for" class="openset_icongreen"></a>
+                        
+                    </li>
+                    
+                    <li class="voting_set">
+                        <div class="wrapper">
+                            <div class="question">
+                                
+                                    <div class="social_sharing_icons right">
+    <a href="#" class="share_icon"></a>
+    <ul>
+        <li><a target="_blank" href="http://www.facebook.com/sharer.php?s=100&p[title]=Check%20out%20these%20products%20compared%20side%20by%20side&p[summary]=%0ATake%20a%20look%20at%20this%20poll%20at%20Bonapick.%20You%20might%20find%20it%20interesting.%0AAnd%20you%20can%20also%20create%20your%20own%20poll%20and%20ask%20your%20friends%20and%20a%20bright%0Acrowd%20about%20their%20opinions%20on%20%22What%27s%20best%20to%20buy%3F%22.%0A&p[url]=http%3A//bonapick.com/request/sterling_silver_oxidized_bracelet_7_25_vs_sterling_silver_filigree_cuff_bracelet_vs_unique_filigree_wirework_adjustable_sterling_silver_vs_wide_flower_design_embossed_sterling_silver_cuff_bracelet&p[images][0]=http%3A//db58kxikxpd37.cloudfront.net/SZvjEh.jpg" class="facebook_icon"></a></li>
+        <li><a target="_blank" href="https://twitter.com/share?text=Check%20out%20these%20products%20compared%20side%20by%20side&url=http%3A//bonapick.com/request/sterling_silver_oxidized_bracelet_7_25_vs_sterling_silver_filigree_cuff_bracelet_vs_unique_filigree_wirework_adjustable_sterling_silver_vs_wide_flower_design_embossed_sterling_silver_cuff_bracelet" class="twittershare_icon"></a></li>
+        <li><a target="_blank" href="?url=http://bonapick.com/request/sterling_silver_oxidized_bracelet_7_25_vs_sterling_silver_filigree_cuff_bracelet_vs_unique_filigree_wirework_adjustable_sterling_silver_vs_wide_flower_design_embossed_sterling_silver_cuff_bracelet&media=http%3A//db58kxikxpd37.cloudfront.net/yvYBRz.jpg&description=Check%20out%20these%20products%20compared%20side%20by%20side%20at%20Bonapick.com" class="pinterest_icon"></a></li>
+        <li><a target="_blank" href="https://plus.google.com/share?url=http://bonapick.com/request/http://bonapick.com" class="googleplus_icon"></a></li>
+        <li><a href="mailto:?subject=So%20cool%20silver%20bracelets%2C%20I%20love%20all%20of%20them%2C%20but%20need%20to%20buy%20only%20one.%20What%20do%20you%20think%3F&amp;body=%0ATake%20a%20look%20at%20this%20poll%20at%20Bonapick.%20You%20might%20find%20it%20interesting.%0AAnd%20you%20can%20also%20create%20your%20own%20poll%20and%20ask%20your%20friends%20and%20a%20bright%0Acrowd%20about%20their%20opinions%20on%20%22What%27s%20best%20to%20buy%3F%22.%0AHere%20is%20the%20direct%20link%0Ahttp%3A//bonapick.com/request/sterling_silver_oxidized_bracelet_7_25_vs_sterling_silver_filigree_cuff_bracelet_vs_unique_filigree_wirework_adjustable_sterling_silver_vs_wide_flower_design_embossed_sterling_silver_cuff_bracelet" class="email_icon"></a></li>
+        <li><a href="http://bonapick.com/request/sterling_silver_oxidized_bracelet_7_25_vs_sterling_silver_filigree_cuff_bracelet_vs_unique_filigree_wirework_adjustable_sterling_silver_vs_wide_flower_design_embossed_sterling_silver_cuff_bracelet" class="sharelink_icon"></a></li>
+    </ul>
+</div>
+                                
+                                <p>So cool silver bracelets, I love all of them, but need to buy only one. What do you think?</p>
+                            </div>
+                            <div class="column1 left">
+                                <div class="image_big"
+                                     style="background-image:url(http://ecx.images-amazon.com/images/I/51pFys%2BcJzL.jpg);"
+                                     data-json="{&quot;merchant&quot;:1,&quot;title&quot;:&quot;Sterling Silver Oxidized Bracelet, 7.25\&quot;&quot;,&quot;short_url&quot;:&quot;QZssRLy&quot;,&quot;winner&quot;:1,&quot;request_status&quot;:&quot;voted&quot;,&quot;big_img_url&quot;:&quot;http://ecx.images-amazon.com/images/I/51pFys%2BcJzL.jpg&quot;,&quot;start_angle&quot;:1.5,&quot;percentage&quot;:71,&quot;img_url&quot;:&quot;http://ecx.images-amazon.com/images/I/51pFys%2BcJzL._SL160_.jpg&quot;}">
+                                    <span class="winner_percentage">71%</span>
+                                    <div class="description">
+                                        <p>Sterling Silver Oxidized Bracelet, 7.25&quot;</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="column2 left">
+                                <span></span>
+                                <ol>
+                                    
+                                    <li>
+                                        <a href="#"
+                                           class="image_small"
+                                           style="background-image:url(http://ecx.images-amazon.com/images/I/51EpgW1W0FL._SL160_.jpg);"
+                                           data-json="{&quot;merchant&quot;:1,&quot;title&quot;:&quot;Sterling Silver Filigree Cuff Bracelet&quot;,&quot;short_url&quot;:&quot;HUVadtg&quot;,&quot;winner&quot;:0,&quot;request_status&quot;:&quot;voted&quot;,&quot;big_img_url&quot;:&quot;http://ecx.images-amazon.com/images/I/51EpgW1W0FL.jpg&quot;,&quot;start_angle&quot;:0.9199999999999999,&quot;percentage&quot;:15,&quot;img_url&quot;:&quot;http://ecx.images-amazon.com/images/I/51EpgW1W0FL._SL160_.jpg&quot;}">
+                                            <span class="percentage">15%</span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li>
+                                        <a href="#"
+                                           class="image_small"
+                                           style="background-image:url(http://ecx.images-amazon.com/images/I/41rrxVTEKWL._SL160_.jpg);"
+                                           data-json="{&quot;merchant&quot;:1,&quot;title&quot;:&quot;Unique Filigree Wirework Adjustable Sterling Silver Cuff Bracelet 7.5\&quot; - 8.5\&quot;&quot;,&quot;short_url&quot;:&quot;huysQhv&quot;,&quot;winner&quot;:0,&quot;request_status&quot;:&quot;voted&quot;,&quot;big_img_url&quot;:&quot;http://ecx.images-amazon.com/images/I/41rrxVTEKWL.jpg&quot;,&quot;start_angle&quot;:1.22,&quot;percentage&quot;:11,&quot;img_url&quot;:&quot;http://ecx.images-amazon.com/images/I/41rrxVTEKWL._SL160_.jpg&quot;}">
+                                            <span class="percentage">11%</span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li>
+                                        <a href="#"
+                                           class="image_small"
+                                           style="background-image:url(http://ecx.images-amazon.com/images/I/41Jc6pq9KYL._SL160_.jpg);"
+                                           data-json="{&quot;merchant&quot;:1,&quot;title&quot;:&quot;Wide Flower Design Embossed Sterling Silver Cuff Bracelet&quot;,&quot;short_url&quot;:&quot;CdzPPjZ&quot;,&quot;winner&quot;:0,&quot;request_status&quot;:&quot;voted&quot;,&quot;big_img_url&quot;:&quot;http://ecx.images-amazon.com/images/I/41Jc6pq9KYL.jpg&quot;,&quot;start_angle&quot;:1.44,&quot;percentage&quot;:3,&quot;img_url&quot;:&quot;http://ecx.images-amazon.com/images/I/41Jc6pq9KYL._SL160_.jpg&quot;}">
+                                            <span class="percentage">3%</span>
+                                        </a>
+                                    </li>
+                                    
+                                </ol>
+                            </div>
+                        </div>
+                        <a href="http://bonapick.com/request/sterling_silver_oxidized_bracelet_7_25_vs_sterling_silver_filigree_cuff_bracelet_vs_unique_filigree_wirework_adjustable_sterling_silver_vs_wide_flower_design_embossed_sterling_silver_cuff_bracelet" class="openset_icongreen"></a>
+                        
+                    </li>
+                    
+                    <li class="voting_set">
+                        <div class="wrapper">
+                            <div class="question">
+                                
+                                    <div class="social_sharing_icons right">
+    <a href="#" class="share_icon"></a>
+    <ul>
+        <li><a target="_blank" href="http://www.facebook.com/sharer.php?s=100&p[title]=Check%20out%20these%20products%20compared%20side%20by%20side&p[summary]=%0ATake%20a%20look%20at%20this%20poll%20at%20Bonapick.%20You%20might%20find%20it%20interesting.%0AAnd%20you%20can%20also%20create%20your%20own%20poll%20and%20ask%20your%20friends%20and%20a%20bright%0Acrowd%20about%20their%20opinions%20on%20%22What%27s%20best%20to%20buy%3F%22.%0A&p[url]=http%3A//bonapick.com/request/ash_womens_vertue_fashion_sneaker_black_38_eu_8_m_vs_ash_womens_varum_sneaker_black_37_eu_7_m_us_vs_ash_womens_zest_ter_fashion_sneaker_midnight_piombo&p[images][0]=http%3A//db58kxikxpd37.cloudfront.net/Zmj7Ad.jpg" class="facebook_icon"></a></li>
+        <li><a target="_blank" href="https://twitter.com/share?text=Check%20out%20these%20products%20compared%20side%20by%20side&url=http%3A//bonapick.com/request/ash_womens_vertue_fashion_sneaker_black_38_eu_8_m_vs_ash_womens_varum_sneaker_black_37_eu_7_m_us_vs_ash_womens_zest_ter_fashion_sneaker_midnight_piombo" class="twittershare_icon"></a></li>
+        <li><a target="_blank" href="?url=http://bonapick.com/request/ash_womens_vertue_fashion_sneaker_black_38_eu_8_m_vs_ash_womens_varum_sneaker_black_37_eu_7_m_us_vs_ash_womens_zest_ter_fashion_sneaker_midnight_piombo&media=http%3A//db58kxikxpd37.cloudfront.net/jyzzvd.jpg&description=Check%20out%20these%20products%20compared%20side%20by%20side%20at%20Bonapick.com" class="pinterest_icon"></a></li>
+        <li><a target="_blank" href="https://plus.google.com/share?url=http://bonapick.com/request/http://bonapick.com" class="googleplus_icon"></a></li>
+        <li><a href="mailto:?subject=Definitely%20love%20them%20all%2C%20help%20to%20choose%20pleeease%21&amp;body=%0ATake%20a%20look%20at%20this%20poll%20at%20Bonapick.%20You%20might%20find%20it%20interesting.%0AAnd%20you%20can%20also%20create%20your%20own%20poll%20and%20ask%20your%20friends%20and%20a%20bright%0Acrowd%20about%20their%20opinions%20on%20%22What%27s%20best%20to%20buy%3F%22.%0AHere%20is%20the%20direct%20link%0Ahttp%3A//bonapick.com/request/ash_womens_vertue_fashion_sneaker_black_38_eu_8_m_vs_ash_womens_varum_sneaker_black_37_eu_7_m_us_vs_ash_womens_zest_ter_fashion_sneaker_midnight_piombo" class="email_icon"></a></li>
+        <li><a href="http://bonapick.com/request/ash_womens_vertue_fashion_sneaker_black_38_eu_8_m_vs_ash_womens_varum_sneaker_black_37_eu_7_m_us_vs_ash_womens_zest_ter_fashion_sneaker_midnight_piombo" class="sharelink_icon"></a></li>
+    </ul>
+</div>
+                                
+                                <p>Definitely love them all, help to choose pleeease!</p>
+                            </div>
+                            <div class="column1 left">
+                                <div class="image_big"
+                                     style="background-image:url(http://ecx.images-amazon.com/images/I/51kOgntQXmL.jpg);"
+                                     data-json="{&quot;merchant&quot;:1,&quot;title&quot;:&quot;Ash Women&#39;s Vertue Fashion Sneaker,Black,38 EU/8 M US&quot;,&quot;short_url&quot;:&quot;XOXTNTr&quot;,&quot;winner&quot;:1,&quot;request_status&quot;:&quot;voted&quot;,&quot;big_img_url&quot;:&quot;http://ecx.images-amazon.com/images/I/51kOgntQXmL.jpg&quot;,&quot;start_angle&quot;:1.5,&quot;percentage&quot;:39,&quot;img_url&quot;:&quot;http://ecx.images-amazon.com/images/I/51kOgntQXmL._SL160_.jpg&quot;}">
+                                    <span class="winner_percentage">39%</span>
+                                    <div class="description">
+                                        <p>Ash Women&#39;s Vertue Fashion Sneaker,Black,38 EU/8 M US</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="column2 left">
+                                <span></span>
+                                <ol>
+                                    
+                                    <li>
+                                        <a href="#"
+                                           class="image_small"
+                                           style="background-image:url(http://ecx.images-amazon.com/images/I/41HT-cBtajL._SL160_.jpg);"
+                                           data-json="{&quot;merchant&quot;:1,&quot;title&quot;:&quot;Ash Women&#39;s Varum Sneaker,Black,37 EU/7 M US&quot;,&quot;short_url&quot;:&quot;ncvtztd&quot;,&quot;winner&quot;:0,&quot;request_status&quot;:&quot;voted&quot;,&quot;big_img_url&quot;:&quot;http://ecx.images-amazon.com/images/I/41HT-cBtajL.jpg&quot;,&quot;start_angle&quot;:0.28000000000000025,&quot;percentage&quot;:31,&quot;img_url&quot;:&quot;http://ecx.images-amazon.com/images/I/41HT-cBtajL._SL160_.jpg&quot;}">
+                                            <span class="percentage">31%</span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li>
+                                        <a href="#"
+                                           class="image_small"
+                                           style="background-image:url(http://ecx.images-amazon.com/images/I/51pI4CFsquL._SL160_.jpg);"
+                                           data-json="{&quot;merchant&quot;:1,&quot;title&quot;:&quot;Ash Women&#39;s Zest Ter Fashion Sneaker,Midnight/Piombo,39 EU/9 M US&quot;,&quot;short_url&quot;:&quot;amavPqH&quot;,&quot;winner&quot;:0,&quot;request_status&quot;:&quot;voted&quot;,&quot;big_img_url&quot;:&quot;http://ecx.images-amazon.com/images/I/51pI4CFsquL.jpg&quot;,&quot;start_angle&quot;:0.9000000000000002,&quot;percentage&quot;:30,&quot;img_url&quot;:&quot;http://ecx.images-amazon.com/images/I/51pI4CFsquL._SL160_.jpg&quot;}">
+                                            <span class="percentage">30%</span>
+                                        </a>
+                                    </li>
+                                    
+                                </ol>
+                            </div>
+                        </div>
+                        <a href="http://bonapick.com/request/ash_womens_vertue_fashion_sneaker_black_38_eu_8_m_vs_ash_womens_varum_sneaker_black_37_eu_7_m_us_vs_ash_womens_zest_ter_fashion_sneaker_midnight_piombo" class="openset_icongreen"></a>
+                        
+                    </li>
+                    
+                    <li class="voting_set">
+                        <div class="wrapper">
+                            <div class="question">
+                                
+                                    <div class="social_sharing_icons right">
+    <a href="#" class="share_icon"></a>
+    <ul>
+        <li><a target="_blank" href="http://www.facebook.com/sharer.php?s=100&p[title]=Check%20out%20these%20products%20compared%20side%20by%20side&p[summary]=%0ATake%20a%20look%20at%20this%20poll%20at%20Bonapick.%20You%20might%20find%20it%20interesting.%0AAnd%20you%20can%20also%20create%20your%20own%20poll%20and%20ask%20your%20friends%20and%20a%20bright%0Acrowd%20about%20their%20opinions%20on%20%22What%27s%20best%20to%20buy%3F%22.%0A&p[url]=http%3A//bonapick.com/request/nikon_d3200_24_2_mp_cmos_digital_slr_with_18-55mm_vs_sony_nex-5rk_b_16_1_mp_compact_interchangeable_lens_vs_panasonic_lumix_dmc-fz70_16_1_mp_digital_camera_with&p[images][0]=http%3A//db58kxikxpd37.cloudfront.net/HrqCOG.jpg" class="facebook_icon"></a></li>
+        <li><a target="_blank" href="https://twitter.com/share?text=Check%20out%20these%20products%20compared%20side%20by%20side&url=http%3A//bonapick.com/request/nikon_d3200_24_2_mp_cmos_digital_slr_with_18-55mm_vs_sony_nex-5rk_b_16_1_mp_compact_interchangeable_lens_vs_panasonic_lumix_dmc-fz70_16_1_mp_digital_camera_with" class="twittershare_icon"></a></li>
+        <li><a target="_blank" href="?url=http://bonapick.com/request/nikon_d3200_24_2_mp_cmos_digital_slr_with_18-55mm_vs_sony_nex-5rk_b_16_1_mp_compact_interchangeable_lens_vs_panasonic_lumix_dmc-fz70_16_1_mp_digital_camera_with&media=http%3A//db58kxikxpd37.cloudfront.net/eH5bOb.jpg&description=Check%20out%20these%20products%20compared%20side%20by%20side%20at%20Bonapick.com" class="pinterest_icon"></a></li>
+        <li><a target="_blank" href="https://plus.google.com/share?url=http://bonapick.com/request/http://bonapick.com" class="googleplus_icon"></a></li>
+        <li><a href="mailto:?subject=Circle%20narrowed%20down%20to%20these%20two%20models%20...%20My%20head%20is%20going%20to%20explode%2C%20need%20your%20advice%21&amp;body=%0ATake%20a%20look%20at%20this%20poll%20at%20Bonapick.%20You%20might%20find%20it%20interesting.%0AAnd%20you%20can%20also%20create%20your%20own%20poll%20and%20ask%20your%20friends%20and%20a%20bright%0Acrowd%20about%20their%20opinions%20on%20%22What%27s%20best%20to%20buy%3F%22.%0AHere%20is%20the%20direct%20link%0Ahttp%3A//bonapick.com/request/nikon_d3200_24_2_mp_cmos_digital_slr_with_18-55mm_vs_sony_nex-5rk_b_16_1_mp_compact_interchangeable_lens_vs_panasonic_lumix_dmc-fz70_16_1_mp_digital_camera_with" class="email_icon"></a></li>
+        <li><a href="http://bonapick.com/request/nikon_d3200_24_2_mp_cmos_digital_slr_with_18-55mm_vs_sony_nex-5rk_b_16_1_mp_compact_interchangeable_lens_vs_panasonic_lumix_dmc-fz70_16_1_mp_digital_camera_with" class="sharelink_icon"></a></li>
+    </ul>
+</div>
+                                
+                                <p>Circle narrowed down to these two models ... My head is going to explode, need your advice!</p>
+                            </div>
+                            <div class="column1 left">
+                                <div class="image_big"
+                                     style="background-image:url(http://ecx.images-amazon.com/images/I/414TPneQOiL.jpg);"
+                                     data-json="{&quot;merchant&quot;:1,&quot;title&quot;:&quot;Nikon D3200 24.2 MP CMOS Digital SLR with 18-55mm f/3.5-5.6 AF-S DX VR NIKKOR Zoom Lens (Black)&quot;,&quot;short_url&quot;:&quot;cKgGXJZ&quot;,&quot;winner&quot;:1,&quot;request_status&quot;:&quot;voted&quot;,&quot;big_img_url&quot;:&quot;http://ecx.images-amazon.com/images/I/414TPneQOiL.jpg&quot;,&quot;start_angle&quot;:1.5,&quot;percentage&quot;:56,&quot;img_url&quot;:&quot;http://ecx.images-amazon.com/images/I/414TPneQOiL._SL160_.jpg&quot;}">
+                                    <span class="winner_percentage">56%</span>
+                                    <div class="description">
+                                        <p>Nikon D3200 24.2 MP CMOS Digital SLR with 18-55mm f/3.5-5.6 AF-S DX VR NIKKOR Zoom Lens (Black)</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="column2 left">
+                                <span></span>
+                                <ol>
+                                    
+                                    <li>
+                                        <a href="#"
+                                           class="image_small"
+                                           style="background-image:url(http://ecx.images-amazon.com/images/I/41b4r8aqpZL._SL160_.jpg);"
+                                           data-json="{&quot;merchant&quot;:1,&quot;title&quot;:&quot;Sony NEX-5RK/B 16.1 MP Compact Interchangeable Lens Digital Camera with 18-55mm Lenses (Black)&quot;,&quot;short_url&quot;:&quot;fvkGZSc&quot;,&quot;winner&quot;:0,&quot;request_status&quot;:&quot;voted&quot;,&quot;big_img_url&quot;:&quot;http://ecx.images-amazon.com/images/I/41b4r8aqpZL._SL160_.jpg&quot;,&quot;start_angle&quot;:0.6200000000000001,&quot;percentage&quot;:25,&quot;img_url&quot;:&quot;http://ecx.images-amazon.com/images/I/41b4r8aqpZL._SL160_.jpg&quot;}">
+                                            <span class="percentage">25%span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li>
+                                        <a href="#"
+                                           class="image_small"
+                                           style="background-image:url(http://ecx.images-amazon.com/images/I/41vVuEaWCJL._SL160_.jpg);"
+                                           data-json="{&quot;merchant&quot;:1,&quot;title&quot;:&quot;Panasonic LUMIX DMC-FZ70 16.1 MP Digital Camera with 60x Optical Image Stabilized Zoom and 3-Inch LCD (Black)&quot;,&quot;short_url&quot;:&quot;yMzZlxJ&quot;,&quot;winner&quot;:0,&quot;request_status&quot;:&quot;voted&quot;,&quot;big_img_url&quot;:&quot;http://ecx.images-amazon.com/images/I/41vVuEaWCJL.jpg&quot;,&quot;start_angle&quot;:1.12,&quot;percentage&quot;:19,&quot;img_url&quot;:&quot;http://ecx.images-amazon.com/images/I/41vVuEaWCJL._SL160_.jpg&quot;}">
+                                            <span class="percentage">19%</span>
+                                        </a>
+                                    </li>
+                                    
+                                </ol>
+                            </div>
+                        </div>
+                        <a href="http://bonapick.com/request/nikon_d3200_24_2_mp_cmos_digital_slr_with_18-55mm_vs_sony_nex-5rk_b_16_1_mp_compact_interchangeable_lens_vs_panasonic_lumix_dmc-fz70_16_1_mp_digital_camera_with" class="openset_icongreen"></a>
+                        
+                    </li>
+                    
+                    <li class="voting_set">
+                        <div class="wrapper">
+                            <div class="question">
+                                
+                                    <div class="social_sharing_icons right">
+    <a href="#" class="share_icon"></a>
+    <ul>
+        <li><a target="_blank" href="http://www.facebook.com/sharer.php?s=100&p[title]=Check%20out%20these%20products%20compared%20side%20by%20side&p[summary]=%0ATake%20a%20look%20at%20this%20poll%20at%20Bonapick.%20You%20might%20find%20it%20interesting.%0AAnd%20you%20can%20also%20create%20your%20own%20poll%20and%20ask%20your%20friends%20and%20a%20bright%0Acrowd%20about%20their%20opinions%20on%20%22What%27s%20best%20to%20buy%3F%22.%0A&p[url]=http%3A//bonapick.com/request/george_bride_strapless_beaded_bodice_satin_court_train_vs_george_bride_elegant_v_neck_capped_sleeves_all-over_vs_george_bride_tulle_with_chantilly_lace_and_royal_satin_vs_george_bride_cream_sheath_column_v_neck_floor-length&p[images][0]=http%3A//db58kxikxpd37.cloudfront.net/VLsn69.jpg" class="facebook_icon"></a></li>
+        <li><a target="_blank" href="https://twitter.com/share?text=Check%20out%20these%20products%20compared%20side%20by%20side&url=http%3A//bonapick.com/request/george_bride_strapless_beaded_bodice_satin_court_train_vs_george_bride_elegant_v_neck_capped_sleeves_all-over_vs_george_bride_tulle_with_chantilly_lace_and_royal_satin_vs_george_bride_cream_sheath_column_v_neck_floor-length" class="twittershare_icon"></a></li>
+        <li><a target="_blank" href="?url=http://bonapick.com/request/george_bride_strapless_beaded_bodice_satin_court_train_vs_george_bride_elegant_v_neck_capped_sleeves_all-over_vs_george_bride_tulle_with_chantilly_lace_and_royal_satin_vs_george_bride_cream_sheath_column_v_neck_floor-length&media=http%3A//db58kxikxpd37.cloudfront.net/7Y3Y16.jpg&description=Check%20out%20these%20products%20compared%20side%20by%20side%20at%20Bonapick.com" class="pinterest_icon"></a></li>
+        <li><a target="_blank" href="https://plus.google.com/share?url=http://bonapick.com/request/http://bonapick.com" class="googleplus_icon"></a></li>
+        <li><a href="mailto:?subject=All%20styles%20are%20so%20amazing%2C%20but%20I%20need%20only%20one%20%3A%28&amp;body=%0ATake%20a%20look%20at%20this%20poll%20at%20Bonapick.%20You%20might%20find%20it%20interesting.%0AAnd%20you%20can%20also%20create%20your%20own%20poll%20and%20ask%20your%20friends%20and%20a%20bright%0Acrowd%20about%20their%20opinions%20on%20%22What%27s%20best%20to%20buy%3F%22.%0AHere%20is%20the%20direct%20link%0Ahttp%3A//bonapick.com/request/george_bride_strapless_beaded_bodice_satin_court_train_vs_george_bride_elegant_v_neck_capped_sleeves_all-over_vs_george_bride_tulle_with_chantilly_lace_and_royal_satin_vs_george_bride_cream_sheath_column_v_neck_floor-length" class="email_icon"></a></li>
+        <li><a href="http://bonapick.com/request/george_bride_strapless_beaded_bodice_satin_court_train_vs_george_bride_elegant_v_neck_capped_sleeves_all-over_vs_george_bride_tulle_with_chantilly_lace_and_royal_satin_vs_george_bride_cream_sheath_column_v_neck_floor-length" class="sharelink_icon"></a></li>
+    </ul>
+</div>
+                                
+                                <p>All styles are so amazing, but I need only one :(</p>
+                            </div>
+                            <div class="column1 left">
+                                <div class="image_big"
+                                     style="background-image:url(http://ecx.images-amazon.com/images/I/41Korv7md1L.jpg);"
+                                     data-json="{&quot;merchant&quot;:1,&quot;title&quot;:&quot;GEORGE BRIDE Strapless Beaded Bodice Satin Court Train Wedding Dress Size 8 White&quot;,&quot;short_url&quot;:&quot;EiIptpm&quot;,&quot;winner&quot;:1,&quot;request_status&quot;:&quot;voted&quot;,&quot;big_img_url&quot;:&quot;http://ecx.images-amazon.com/images/I/41Korv7md1L.jpg&quot;,&quot;start_angle&quot;:1.5,&quot;percentage&quot;:31,&quot;img_url&quot;:&quot;http://ecx.images-amazon.com/images/I/41Korv7md1L._SL160_.jpg&quot;}">
+                                    <span class="winner_percentage">31%</span>
+                                    <div class="description">
+                                        <p>GEORGE BRIDE Strapless Beaded Bodice Satin Court Train Wedding Dress Size 8 White</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="column2 left">
+                                <span></span>
+                                <ol>
+                                    
+                                    <li>
+                                        <a href="#"
+                                           class="image_small"
+                                           style="background-image:url(http://ecx.images-amazon.com/images/I/41LGKtkrBiL._SL160_.jpg);"
+                                           data-json="{&quot;merchant&quot;:1,&quot;title&quot;:&quot;GEORGE BRIDE Elegant V Neck Capped Sleeves All-Over Lace Applique Wedding Gown Size 10 Ivory&quot;,&quot;short_url&quot;:&quot;eySwpbl&quot;,&quot;winner&quot;:0,&quot;request_status&quot;:&quot;voted&quot;,&quot;big_img_url&quot;:&quot;http://ecx.images-amazon.com/images/I/41LGKtkrBiL.jpg&quot;,&quot;start_angle&quot;:0.1200000000000001,&quot;percentage&quot;:26,&quot;img_url&quot;:&quot;http://ecx.images-amazon.com/images/I/41LGKtkrBiL._SL160_.jpg&quot;}">
+                                            <span class="percentage">26%</span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li>
+                                        <a href="#"
+                                           class="image_small"
+                                           style="background-image:url(http://ecx.images-amazon.com/images/I/31w7t-zF8EL._SL160_.jpg);"
+                                           data-json="{&quot;merchant&quot;:1,&quot;title&quot;:&quot;GEORGE BRIDE Tulle With Chantilly Lace And Royal Satin Ball Gown With Beaded Details And Pockets Size 12 White&quot;,&quot;short_url&quot;:&quot;UVTMrEj&quot;,&quot;winner&quot;:0,&quot;request_status&quot;:&quot;voted&quot;,&quot;big_img_url&quot;:&quot;http://ecx.images-amazon.com/images/I/31w7t-zF8EL.jpg&quot;,&quot;start_angle&quot;:0.6400000000000001,&quot;percentage&quot;:23,&quot;img_url&quot;:&quot;http://ecx.images-amazon.com/images/I/31w7t-zF8EL._SL160_.jpg&quot;}">
+                                            <span class="percentage">23%</span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li>
+                                        <a href="#"
+                                           class="image_small"
+                                           style="background-image:url(http://ecx.images-amazon.com/images/I/31gC-q0XTEL._SL160_.jpg);"
+                                           data-json="{&quot;merchant&quot;:1,&quot;title&quot;:&quot;GEORGE BRIDE Cream Sheath/ Column V Neck Floor-Length Chiffon Evening Dress With Beaded Appliques Size 18 Ivory&quot;,&quot;short_url&quot;:&quot;LRKXBbh&quot;,&quot;winner&quot;:0,&quot;request_status&quot;:&quot;voted&quot;,&quot;big_img_url&quot;:&quot;http://ecx.images-amazon.com/images/I/31gC-q0XTEL.jpg&quot;,&quot;start_angle&quot;:1.1,&quot;percentage&quot;:20,&quot;img_url&quot;:&quot;http://ecx.images-amazon.com/images/I/31gC-q0XTEL._SL160_.jpg&quot;}">
+                                            <span class="percentage">20%</span>
+                                        </a>
+                                    </li>
+                                    
+                                </ol>
+                            </div>
+                        </div>
+                        <a href="http://bonapick.com/request/george_bride_strapless_beaded_bodice_satin_court_train_vs_george_bride_elegant_v_neck_capped_sleeves_all-over_vs_george_bride_tulle_with_chantilly_lace_and_royal_satin_vs_george_bride_cream_sheath_column_v_neck_floor-length" class="openset_icongreen"></a>
+                        
+                    </li>
+                    
+                    <li class="voting_set">
+                        <div class="wrapper">
+                            <div class="question">
+                                
+                                    <div class="social_sharing_icons right">
+    <a href="#" class="share_icon"></a>
+    <ul>
+        <li><a target="_blank" href="http://www.facebook.com/sharer.php?s=100&p[title]=Check%20out%20these%20products%20compared%20side%20by%20side&p[summary]=%0ATake%20a%20look%20at%20this%20poll%20at%20Bonapick.%20You%20might%20find%20it%20interesting.%0AAnd%20you%20can%20also%20create%20your%20own%20poll%20and%20ask%20your%20friends%20and%20a%20bright%0Acrowd%20about%20their%20opinions%20on%20%22What%27s%20best%20to%20buy%3F%22.%0A&p[url]=http%3A//bonapick.com/request/ruby_rox_juniors_tiered_petal_dress_blue_coral_5_vs_eight_sixty_womens_cold_shoulder_cinch_waist_dress_vs_bb_dakota_womens_indra_dresses_pink_print_6_vs_lucky_brand_womens_chantal_t-shirt_dress_navy_multi&p[images][0]=http%3A//db58kxikxpd37.cloudfront.net/Gv__Dq.png" class="facebook_icon"></a></li>
+        <li><a target="_blank" href="https://twitter.com/share?text=Check%20out%20these%20products%20compared%20side%20by%20side&url=http%3A//bonapick.com/request/ruby_rox_juniors_tiered_petal_dress_blue_coral_5_vs_eight_sixty_womens_cold_shoulder_cinch_waist_dress_vs_bb_dakota_womens_indra_dresses_pink_print_6_vs_lucky_brand_womens_chantal_t-shirt_dress_navy_multi" class="twittershare_icon"></a></li>
+        <li><a target="_blank" href="?url=http://bonapick.com/request/ruby_rox_juniors_tiered_petal_dress_blue_coral_5_vs_eight_sixty_womens_cold_shoulder_cinch_waist_dress_vs_bb_dakota_womens_indra_dresses_pink_print_6_vs_lucky_brand_womens_chantal_t-shirt_dress_navy_multi&media=http%3A//db58kxikxpd37.cloudfront.net/m9rGxp.png&description=Check%20out%20these%20products%20compared%20side%20by%20side%20at%20Bonapick.com" class="pinterest_icon"></a></li>
+        <li><a target="_blank" href="https://plus.google.com/share?url=http://bonapick.com/request/http://bonapick.com" class="googleplus_icon"></a></li>
+        <li><a href="mailto:?subject=mmm...%20what%20do%20you%20think%3F&amp;body=%0ATake%20a%20look%20at%20this%20poll%20at%20Bonapick.%20You%20might%20find%20it%20interesting.%0AAnd%20you%20can%20also%20create%20your%20own%20poll%20and%20ask%20your%20friends%20and%20a%20bright%0Acrowd%20about%20their%20opinions%20on%20%22What%27s%20best%20to%20buy%3F%22.%0AHere%20is%20the%20direct%20link%0Ahttp%3A//bonapick.com/request/ruby_rox_juniors_tiered_petal_dress_blue_coral_5_vs_eight_sixty_womens_cold_shoulder_cinch_waist_dress_vs_bb_dakota_womens_indra_dresses_pink_print_6_vs_lucky_brand_womens_chantal_t-shirt_dress_navy_multi" class="email_icon"></a></li>
+        <li><a href="http://bonapick.com/request/ruby_rox_juniors_tiered_petal_dress_blue_coral_5_vs_eight_sixty_womens_cold_shoulder_cinch_waist_dress_vs_bb_dakota_womens_indra_dresses_pink_print_6_vs_lucky_brand_womens_chantal_t-shirt_dress_navy_multi" class="sharelink_icon"></a></li>
+    </ul>
+</div>
+                                
+                                <p>mmm... what do you think?</p>
+                            </div>
+                            <div class="column1 left">
+                                <div class="image_big"
+                                     style="background-image:url(http://ecx.images-amazon.com/images/I/41Av-YZWyIL.jpg);"
+                                     data-json="{&quot;merchant&quot;:1,&quot;title&quot;:&quot;Ruby Rox Juniors Tiered Petal Dress, Blue/Coral, 5&quot;,&quot;short_url&quot;:&quot;cgHslrx&quot;,&quot;winner&quot;:1,&quot;request_status&quot;:&quot;voted&quot;,&quot;big_img_url&quot;:&quot;http://ecx.images-amazon.com/images/I/41Av-YZWyIL.jpg&quot;,&quot;start_angle&quot;:1.5,&quot;percentage&quot;:37,&quot;img_url&quot;:&quot;http://ecx.images-amazon.com/images/I/41Av-YZWyIL._SL160_.jpg&quot;}">
+                                    <span class="winner_percentage">37%</span>
+                                    <div class="description">
+                                        <p>Ruby Rox Juniors Tiered Petal Dress, Blue/Coral, 5</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="column2 left">
+                                <span></span>
+                                <ol>
+                                    
+                                    <li>
+                                        <a href="#"
+                                           class="image_small"
+                                           style="background-image:url(http://ecx.images-amazon.com/images/I/41ESr1eWhCL._SL160_.jpg);"
+                                           data-json="{&quot;merchant&quot;:1,&quot;title&quot;:&quot;eight sixty Women&#39;s Cold Shoulder Cinch Waist Dress, Light My Fire, Medium&quot;,&quot;short_url&quot;:&quot;OTjCXOl&quot;,&quot;winner&quot;:0,&quot;request_status&quot;:&quot;voted&quot;,&quot;big_img_url&quot;:&quot;http://ecx.images-amazon.com/images/I/41ESr1eWhCL.jpg&quot;,&quot;start_angle&quot;:0.2400000000000002,&quot;percentage&quot;:28,&quot;img_url&quot;:&quot;http://ecx.images-amazon.com/images/I/41ESr1eWhCL._SL160_.jpg&quot;}">
+                                            <span class="percentage">28%</span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li>
+                                        <a href="#"
+                                           class="image_small"
+                                           style="background-image:url(http://ecx.images-amazon.com/images/I/41ICmttFHtL._SL160_.jpg);"
+                                           data-json="{&quot;merchant&quot;:1,&quot;title&quot;:&quot;BB Dakota Women&#39;s Indra Dresses, Pink Print, 6&quot;,&quot;short_url&quot;:&quot;ppsvtrr&quot;,&quot;winner&quot;:0,&quot;request_status&quot;:&quot;voted&quot;,&quot;big_img_url&quot;:&quot;http://ecx.images-amazon.com/images/I/41ICmttFHtL.jpg&quot;,&quot;start_angle&quot;:0.8000000000000003,&quot;percentage&quot;:24,&quot;img_url&quot;:&quot;http://ecx.images-amazon.com/images/I/41ICmttFHtL._SL160_.jpg&quot;}">
+                                            <span class="percentage">24%</span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li>
+                                        <a href="#"
+                                           class="image_small"
+                                           style="background-image:url(http://ecx.images-amazon.com/images/I/41B6yprSuBL._SL160_.jpg);"
+                                           data-json="{&quot;merchant&quot;:1,&quot;title&quot;:&quot;Lucky Brand Women&#39;s Chantal T-Shirt Dress, Navy Multi, Medium&quot;,&quot;short_url&quot;:&quot;QQDFFQn&quot;,&quot;winner&quot;:0,&quot;request_status&quot;:&quot;voted&quot;,&quot;big_img_url&quot;:&quot;http://ecx.images-amazon.com/images/I/41B6yprSuBL.jpg&quot;,&quot;start_angle&quot;:1.2800000000000002,&quot;percentage&quot;:11,&quot;img_url&quot;:&quot;http://ecx.images-amazon.com/images/I/41B6yprSuBL._SL160_.jpg&quot;}">
+                                            <span class="percentage">11%</span>
+                                        </a>
+                                    </li>
+                                    
+                                </ol>
+                            </div>
+                        </div>
+                        <a href="http://bonapick.com/request/ruby_rox_juniors_tiered_petal_dress_blue_coral_5_vs_eight_sixty_womens_cold_shoulder_cinch_waist_dress_vs_bb_dakota_womens_indra_dresses_pink_print_6_vs_lucky_brand_womens_chantal_t-shirt_dress_navy_multi" class="openset_icongreen"></a>
+                        
+                    </li>
+                    
+                    <li class="clear"></li>
+                </ul>
+                
+                <div class="afterfeed">
+                    <a href="/addrequest/" class="button_green"><span>Create Your Poll</span></a>
+                    
+                        <b>or</b>
+                        <h2><a href="?page=2#show_last" data-page='{"page":"2","limit":"10"}' class="load_more_promo_requests">See More Bonapicks</a></h2>
+                        
+                    
+                </div>
+            </section>
+        </div>
+        <div class="social_bar">
+    <div class="content_wrapper">
+        <ul class="wrapper">
+            <li>
+                <div class="fb-like" data-href="http://bonapick.com" data-send="false" data-layout="button_count" data-width="280" data-show-faces="true"></div>
+            </li>
+            <li>
+                <!-- Place this tag in your head or just before your close body tag. -->
+                <script type="text/javascript" src="https://apis.google.com/js/plusone.js"></script>
+                <!-- Place this tag where you want the share button to render. -->
+                <div class="g-plus" data-action="share" data-annotation="bubble" data-href="http://bonapick.com" style="margin-right:20px;"></div>
+            </li>
+            <li>
+                <a href="//pinterest.com/pin/create/button/?url=http://bonapick.com&media=http%3A%2F%2Fdb58kxikxpd37.cloudfront.net%2Fpinterest.png&description=Before%20your%20every%20purchase%20ask%20friends%20and%20an%20expert%20crowd%20%22what%27s%20the%20best%20to%20buy%3F%22%20at%20Bonapick.com" data-pin-do="buttonPin" data-pin-config="beside"><img src="//assets.pinterest.com/images/pidgets/pin_it_button.png" /></a>
+                <script type="text/javascript" src="//assets.pinterest.com/js/pinit.js"></script>
+            </li>
+            <li>
+                <a href="https://twitter.com/share?url=http://bonapick.com&text=Be%20smart!%20Use%20Bonapick%20before%20every%20purchase%20" class="twitter-share-button">Tweet</a>
+                <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+            </li>
+        </ul>
+    </div>
+</div>
+        <div class="content_wrapper">
+            <section>
+    <h1 class="section_title mobile">Howto:</h1>
+    <div class="howto">
+        <a name="howto" class="nav_anchor" style="position:relative;bottom:30px;"></a>
+        <p>Bonapick is fun and easy! A simple way to choose only the right things for you and make the best purchases online. At Bonapick you can ask your friends and a bright crowd about their opinions on an infinite number of products. They'll quickly advice you - by casting votes - on which item is best for you. You can also help others to make a best choice and earn real money if your vote was decisive for their purchase. Welcome to truly assertive shopping, Bonluck!</p>
+        <div class="divider"></div>
+        <ul>
+            <li>
+                <big>Add your voting and crowd will tell you what's better to buy</big>
+                <img src="http://bonapick.com/static/images/howto1.jpg" class="image" alt="Create your poll and the crowd will tell you what's best to buy!"/>
+                <div class="clear"></div>
+            </li>
+            <li>
+                <b>or</b>
+                <big>Share your opinion and help people to make bonapick</big>
+                <img src="http://bonapick.com/static/images/howto2.jpg" class="image" alt="Don't be shy, share your opinion and help others to Bonapick!"/>
+                <div class="clear"></div>
+            </li>
+            <li>
+                <b>&</b>
+                <big>Earn money every time someone buys on your advice</big>
+                <img src="http://bonapick.com/static/images/howto3.jpg" class="image" alt="Earn money every time someone buys on your advice!"/>
+                <div class="clear"></div>
+            </li>
+        </ul>
+    </div>
+</section>
+        </div>
+    </div>
+
+    <form name="add_to_pick_form" action="/addrequest/" method="POST">
+        <input type='hidden' name='csrfmiddlewaretoken' value='vOfZBcZtEKWIyONqUrWzoPsfOh8eUhOS' />
+        <input type="hidden" name="add_to_pick" value="add_to_pick"/>
+        <input type="hidden" name="add_to_pick_field" id="add_to_pick_field" value=""/>
+    </form>
+    <footer>
+        <div class="footer_wrapper">
+            <div class="right">
+                <a href="/" class="logo_wrapper"><img src="http://bonapick.com/static/images/logo.png" alt="Bonapick" class="logo"/></a>
+                <div class="clear"></div>
+                <ol class="social_profile_links">
+                    <li><a href="https://www.facebook.com/mybonapick" target="_blank" class="facebook_btn"></a></li>
+                    <li><a href="https://twitter.com/mybonapick" target="_blank" class="twitter_btn"></a></li>
+                    <li><a href="https://plus.google.com/u/0/b/115169845367138658157/115169845367138658157/posts" target="_blank" class="google_plus_btn"></a></li>
+                    
+                    <li><a href="http://pinterest.com/bonapick/pins/ " target="_blank" class="pinterest_btn"></a></li>
+                </ol>
+            </div>
+            <a href="#" class="right up_link"><span class="up_arrow"></span>up</a>
+            <ul class="footer_menu">
+                <li><a href="/">Home</a></li>
+                <li><a href="/about/">About</a></li>
+                <li><a href="/privacy/">Privacy</a></li>
+                <li><a href="/terms/">Terms</a></li>
+                <li style="display:none"><a href="/press/">Press</a></li>
+                <li><a href="/contact_us/">Contact Us</a></li>
+            </ul>
+        </div>
+        <div class="legal">&copy; Bonapick Inc. All Rights Reserved 2013 &reg;</div>
+    </footer>
+    <div id="popup" class="popup">
+        <div class="popup_wrapper">
+            <a href="#" class="close_popup"><b class="close_big"></b></a>
+            <div id="popup_content">
+                <div class="column1">
+                    <img src="http://ecx.images-amazon.com/images/I/41gu9n%2BrE9L.jpg" alt="Some cool item..."/>
+                </div>
+                <div class="column2">
+                    <h2>Casio Men's MRT1200-091 Sport Analog Dive Watch</h2>
+                    <div class="vote_info" data-json='{"percentage":"38","start_angle":"0"}'>
+                        <div class="pie"></div><span>38%</span>
+                        <p class="right">of people think this one is better than the rest</p>
+                    </div>
+                    <a href="#" class="green_btn_small"><span>Add to Bonapick</span></a>
+                    <span class="full_version">to start new Bonapick with it</span>
+                    <div class="separator">or</div>
+                    <a href="#" target="_blank" class="amazon_btn"><span>buy at Amazon</span></a>
+                    
+                    <span class="full_version">for <span class="red">$169.99</span> and FREE SHIPPING</span>
+                </div>
+                <div class="clear"></div>
+            </div>
+        </div>
+    </div>
+    <div id="backgroundPopup"></div>
+
+
+    
+
+<div id="page-message" class="page-message">
+    <div class="page-message-wrapper ">
+        <div class="page-message-content">
+            
+            <div class="page-message-icon green">
+                <div class="page-message-icon-wrapper green">
+                    <b class="checkmark_small"></b>
+                </div>
+            </div>
+            
+            <div id="page-message-text" class="page-message-text"></div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
