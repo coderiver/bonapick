@@ -178,6 +178,45 @@ header .logo.small, header #menu, header .login_menu, header #menu .social_butto
 header #menu li {
 	float:right;
 }
+.createpollwrapper{
+	display: inline-block;
+	vertical-align: top;
+	@include r(steplast) {
+		display: block;
+		clear: both;
+		text-align: center;
+	}
+	.green_btn_smallontop{
+		@include r(steplast) {
+			top: auto !important;
+			left: auto;
+			margin: auto;
+		}
+	}
+}
+.header__list{
+	@include r(steplast) {
+		text-align: center;
+		display: block;
+	}
+}
+.header__createpoll{
+	@include r(steplast) {
+		display: block;
+		text-align: center;
+		float: none !important;
+	}
+}
+.header__usermenu{
+	position: absolute;
+	top: 0;
+	right: 5px;
+}
+.bx-wrapper{
+	@include r(steplast){
+		margin-top: 50px;
+	}
+}
 /*
 header ul:before {
 	content:'';
@@ -905,6 +944,12 @@ form[name="feed_form"] {
 	box-shadow:0 2px 6px rgba(0,0,0,0.25);
 	background:#fff;
 }
+.whatsbetterwrap {
+	color: #999;
+}
+.whatsbetterwrap:hover {
+	color: #999;
+}
 /* status color markings */
 /*
 .feed .feed_item .feed_item_status_wrapper.status_voted {
@@ -1083,6 +1128,9 @@ form[name="feed_form"] {
 .feed .feed_item .item_meta .fancy_btn_big {
 	margin-top:10px;
 }
+.feed .feed_item .item_meta .zappos_btn_big {
+	margin-top:10px;
+}
 .feed .feed_item .item_meta .amazon_btn_big .amazon_icon_set {
 	margin-top:3px;
 }
@@ -1090,6 +1138,9 @@ form[name="feed_form"] {
 	margin-top:3px;
 }
 .feed .feed_item .item_meta .fancy_btn_big .fancy_icon_set {
+	margin-top:4px;
+}
+.feed .feed_item .item_meta .zappos_btn_big .zappos_icon_set {
 	margin-top:4px;
 }
 .feed .feed_item .item_meta p {
@@ -1225,6 +1276,12 @@ form[name="feed_form"] {
 	font-size:3.3em;
 	margin:100px;
 	text-shadow:1px 1px 1px #fff, 0 0 0 #999, 1px 1px 1px #fff;
+	@include r(step5){
+		font-size: 25px;
+	}
+	br{
+		display: none;
+	}
 }
 
 .addrequest .picked > ol > li, .addrequest #search_results ol li {
@@ -1496,7 +1553,7 @@ form[name="feed_form"] {
 .comment_wrapper .gray p {
 	font-size:1.12em;
 	height:28px;
-	line-height:30px;
+	line-height:28px;
 	cursor:text;
 }
 .comment_wrapper .gray p .pencil {
@@ -1978,7 +2035,7 @@ nav {
 			min-width: 100%;
 		}
 		@include r(step3) {
-			display: none;
+			//display: none;
 		}
 	}
 	@include r(step3) {
@@ -2459,7 +2516,7 @@ a.up_link:hover .up_arrow {
 	font-family: comfortaalight, Arial, Verdana, sans-serif;
 	text-shadow: none;
 }
-.home_search_btn:hover, .facebook_login_button:hover, .twitter_login_button:hover, .amazon_btn:hover, .amazon_btn_big:hover, .ebay_btn:hover, .ebay_btn_big:hover, .fancy_btn:hover, .fancy_btn_big:hover, .fb_button_small:hover, .twitter_button_small:hover, .black_btn:hover, .fb_button:hover, .twitter_button:hover {
+.home_search_btn:hover, .facebook_login_button:hover, .twitter_login_button:hover, .amazon_btn:hover, .amazon_btn_big:hover, .ebay_btn:hover, .ebay_btn_big:hover, .fancy_btn:hover, .fancy_btn_big:hover, .zappos_btn:hover, .zappos_btn_big:hover, .fb_button_small:hover, .twitter_button_small:hover, .black_btn:hover, .fb_button:hover, .twitter_button:hover {
 	color:#fff;
 	opacity: 0.85;
 }
@@ -2596,6 +2653,25 @@ a.up_link:hover .up_arrow {
 	position:relative;
 	font-family:comfortaabold, Arial, Verdana, sans-serif;
 }
+.zappos_btn {
+	background: #f06830;
+	background: -moz-linear-gradient(top,  #f17e30 0%, #ee572f 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f17e30), color-stop(100%,#ee572f)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #f17e30 0%,#ee572f 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #f17e30 0%,#ee572f 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #f17e30 0%,#ee572f 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #f17e30 0%,#ee572f 100%); /* W3C */
+	height:23px;
+	line-height:21px;
+	color:#fff;
+	border: 1px solid #ee572f;
+	border-radius:3px;
+	display:inline-block;
+	font-size:0.9em;
+	text-shadow:none;
+	position:relative;
+	font-family:comfortaabold, Arial, Verdana, sans-serif;
+}
 .amazon_btn span {
 	border-top:1px solid #fbebc4;
 	display:block;
@@ -2610,7 +2686,11 @@ a.up_link:hover .up_arrow {
 	display:block;
 	padding:0 20px 0 21px;
 }
-.amazon_btn:hover, .amazon_btn_big:hover, .fancy_btn_big:hover {
+.zappos_btn span {
+	display:block;
+	padding:0 20px 0 21px;
+}
+.amazon_btn:hover, .amazon_btn_big:hover, .fancy_btn_big:hover, .zappos_btn_big:hover{
 	color:#243a68;
 }
 .green_btn_big {
@@ -2673,16 +2753,29 @@ a.up_link:hover .up_arrow {
 .fancy_btn_big {
 	/* IE9 SVG, needs conditional override of 'filter' to 'none' */
 	background: #46A5E3;
-	background: -webkit-linear-gradient(top, #46A5E3, #46A5E3);
-	background: -ms-linear-gradient(top, #46A5E3, #46A5E3);
-	background: -moz-linear-gradient(top, #46A5E3, #46A5E3);
-	background: -o-linear-gradient(top, #46A5E3, #46A5E3);	
 	display:inline-block;
 	height:38px;
 	line-height:38px;
 	padding:0 4px 0 6px;
 	color:#243a68;
 	border: 1px solid #588cc7;
+	border-radius:3px;
+}
+.zappos_btn_big {
+	/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+	background: #f06830;
+	background: -moz-linear-gradient(top,  #f17e30 0%, #ee572f 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f17e30), color-stop(100%,#ee572f)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #f17e30 0%,#ee572f 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #f17e30 0%,#ee572f 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #f17e30 0%,#ee572f 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #f17e30 0%,#ee572f 100%); /* W3C */
+	display:inline-block;
+	height:38px;
+	line-height:38px;
+	padding:0 4px 0 6px;
+	color:#243a68;
+	border: 1px solid #ee572f;
 	border-radius:3px;
 }
 .facebook_login_button, .twitter_login_button {
@@ -2871,6 +2964,12 @@ a.up_link:hover .up_arrow {
 	display:inline-block;
 	background:transparent url(../images/icons.png) -304px -142px no-repeat;
 }
+.zappos_icon_set {
+	width:58px;
+	height:34px;
+	display:inline-block;
+	background:transparent url(../images/icons.png) -362px -142px no-repeat;
+}
 .amazon_icon {
 	width: 70px;
 	height: 22px;
@@ -2889,11 +2988,19 @@ a.up_link:hover .up_arrow {
 }
 .fancy_icon {
 	width: 87px;
-	height: 22px;
+	height: 20px;
 	opacity: 0.3;
-	margin-bottom: -7px;
+	margin-bottom: -5px;
 	display: inline-block;
 	background: transparent url(../images/icons.png) -42px -176px no-repeat;
+}
+.zappos_icon {
+	width: 72px;
+	height: 26px;
+	opacity: 0.3;
+	margin-bottom: -10px;
+	display: inline-block;
+	background: transparent url(../images/icons.png) -58px -195px no-repeat;
 }
 .amazon .iconsmall,.amazon_iconsmall {
 	width: 70px;
@@ -2921,11 +3028,23 @@ a.up_link:hover .up_arrow {
 }
 .fancy .iconsmall,.fancy_iconsmall {
 	width: 87px;
-	height: 22px;
+	height: 20px;
 	opacity: 0.3;
 	position: absolute;
 	bottom: 60px;
 	background: transparent url(../images/icons.png) -42px -176px no-repeat;
+	@include r(steplast){
+		left: 50%;
+		margin-left: -43px;
+	}
+}
+.zappos .iconsmall,.zappos_iconsmall {
+	width: 72px;
+	height: 26px;
+	opacity: 0.3;
+	position: absolute;
+	bottom: 60px;
+	background: transparent url(../images/icons.png) -58px -195px no-repeat;
 	@include r(steplast){
 		left: 50%;
 		margin-left: -43px;

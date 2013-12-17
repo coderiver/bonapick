@@ -120,10 +120,10 @@ $step1: 1200px;
 	hyphens: auto;
 }
 @mixin font-smoothing($val: antialiased) {
-	 -webkit-font-smoothing: $val;
-	 -moz-font-smoothing: $val;
-	 -ms-font-smoothing: $val;
-	 -o-font-smoothing: $val;
+	-webkit-font-smoothing: $val;
+	-moz-font-smoothing: $val;
+	-ms-font-smoothing: $val;
+	-o-font-smoothing: $val;
 }
 @mixin selection {
 	& ::selection {
